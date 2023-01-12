@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Map from './screens/Map'
 import Home from './screens/Home'
 import Cintra from './screens/Cintra'
 import Nilfgaard from './screens/Nilfgaard'
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <Routes>
+        <Route path='/map' element={<Map />} />
         <Route path='/' element={<Home />} />
         <Route path='cintra' element={<Cintra />} />
         <Route path='nilfgaard' element={<Nilfgaard />} />
