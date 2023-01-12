@@ -1,23 +1,24 @@
-import logo from './logo.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './screens/Home'
+import Cintra from './screens/Cintra'
+import Nilfgaard from './screens/Nilfgaard'
+import Temeria from './screens/Temeria'
+import Redania from './screens/Redania'
+import Kaedwen from './screens/Kaedwen'
+import Toussaint from './screens/Toussaint'
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='cintra' element={<Cintra />} />
+        <Route path='nilfgaard' element={<Nilfgaard />} />
+        <Route path='temeria' element={<Temeria />} />
+        <Route path='redania' element={<Redania />} />
+        <Route path='kaedwen' element={<Kaedwen />} />
+        <Route path='toussaint' element={<Toussaint />} />
+      </Routes>
     </div>
   )
 }
