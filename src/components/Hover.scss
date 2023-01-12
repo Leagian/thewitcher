@@ -1,0 +1,23 @@
+/* 
+.region {
+    position: absolute;
+    top: 60vh;
+    left: 87vh;
+    height: 37vh;
+    width: 20vh;
+    rotate: 15deg;
+    filter: blur(80px);
+    background-color: rgb(33, 201, 252);
+    background-size: cover;
+}
+
+  
+a + div {
+    display: none;
+}
+ 
+a:hover + div {
+    display: block;
+    color: green;
+    font-size: 25px;
+} */

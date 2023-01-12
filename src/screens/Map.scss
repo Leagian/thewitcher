@@ -1,0 +1,85 @@
+/* .container {
+  .witcherMap {
+      display: block;
+      background-image: url("../assets/WitcherMap_BW.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+
+      &:hover .nilfgaard {
+        opacity: 1;
+      }
+  }
+
+  .nilfgaard {
+      display: flex;
+      position: absolute;
+      top: 28vh;
+      left: -10vh;
+      height: 80%;
+      width: 100%;
+      filter: blur(0px);
+      opacity: 0;
+  }
+} */
+
+
+.map-image {
+  background-image: url("../assets/Witcherx4.jpg");
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.novigrad-town {
+  font-size: 13px;
+  position: relative;
+  top: -77.5vh;
+  left: -4.8vh;
+}
+
+.kaermorhen-town {
+  font-size: 13px;
+  position: relative;
+  top: -90vh;
+  left: 26vh;
+}
+
+.cintra-town {
+  font-size: 13px;
+  position: relative;
+  top: -62vh;
+  left: -17vh;
+}
+
+.nilfgaard-town {
+  font-size: 13px;
+  position: relative;
+  top: -11vh;
+  left: -32vh;
+}
+
+.beauclair-town {
+  font-size: 13px;
+  position: relative;
+  top: -57.4vh;
+  left: 20vh;
+}
+
+.vizima-town {
+  font-size: 13px;
+  position: relative;
+  top: -78.5vh;
+  left: -4vh;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
