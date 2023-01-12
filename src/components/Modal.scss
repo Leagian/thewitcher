@@ -1,0 +1,205 @@
+.modalBackground {
+    background-color: #11ffee00;
+}
+
+.openModalBtn {
+    background-color: #3B3C3D;
+    border: none;
+    position: absolute;
+    top: 120px; left: 120px;
+}
+
+.openModalBtn1 {
+    background-color: #3B3C3D;
+    border: none;
+    position: absolute;
+    top: 310px; left: 340px;
+}
+
+.openModalBtn2 {
+    background-color: #3B3C3D;
+    border: none;
+    position: absolute;
+    top: 600px; right: 340px;
+}
+
+.openModalBtn3 {
+    background-color: #3B3C3D;
+    border: none;
+    position: absolute;
+    top: 500px; right: 160px;
+}
+
+.openModalBtn4 {
+    background-color: #3B3C3D;
+    border: none;
+    position: absolute;
+    top: 300px; left: 820px;
+}
+
+// Contient la bulle
+.modalContainer {
+    width: 310px;
+    height: 170px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 140px; left: 140px;
+    padding: 20px;
+}
+
+.modalContainer1 {
+    width: 310px;
+    height: 170px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 330px; left: 360px;
+    padding: 20px;
+}
+
+.modalContainer2 {
+    width: 310px;
+    height: 250px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 620px; right: 360px;
+    padding: 20px;
+}
+
+.modalContainer3 {
+    width: 310px;
+    height: 270px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 520px; right: 180px;
+    padding: 20px;
+}
+
+.modalContainer4 {
+    width: 310px;
+    height: 240px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 320px; left: 840px;
+    padding: 20px;
+}
+
+// Titre de la bulle
+.modalContainer .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.modalContainer1 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.modalContainer2 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.modalContainer3 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.modalContainer4 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+// boite contenant le bouton croix qui ferme la bulle
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// Bouton croix qui ferme la bulle
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+// Corps de texte de la bulle
+.modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.modalContainer1 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.modalContainer2 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.modalContainer3 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.modalContainer4 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
