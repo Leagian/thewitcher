@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Home from './screens/Home'
 import CintraTown from './screens/CintraTown'
-import Nilfgaard from './screens/Nilfgaard'
+import NilfgaardTown from './screens/NilfgaardTown'
 import KaerMorhen from './screens/KaerMorhen'
 import Beauclair from './screens/Beauclair'
 import Novigrad from './screens/Novigrad'
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='cintratown' element={<CintraTown />} />
-        <Route path='nilfgaard' element={<Nilfgaard />} />
+        <Route path='nilfgaardtown' element={<NilfgaardTown />} />
         <Route path='kaermorhen' element={<KaerMorhen />} />
         <Route path='beauclair' element={<Beauclair />} />
         <Route path='novigrad' element={<Novigrad />} />

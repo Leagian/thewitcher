@@ -1,10 +1,12 @@
 @import './App.scss';
 @import './screens/CintraTown.scss';
 @import './screens/KaerMorhen.scss';
-@import './screens/Nilfgaard.scss';
+@import './screens/NilfgaardTown.scss';
 @import './screens/Beauclair.scss';
 @import './screens/Novigrad.scss';
 @import './screens/vizima.scss';
+@import './components/Spark.scss';
+@import './components/CampFire.scss';
 
 body {
   margin: 0;
