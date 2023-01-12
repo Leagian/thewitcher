@@ -1,0 +1,33 @@
+
+.menu {
+    background-size: 100% 100%;
+    background-image: url('../assets/wood\ board.png');
+    width: 75%;
+    height: 75%;
+    border-radius: 25px;
+    
+  }
+.titlemenu {
+    font-size: 50px;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.componentsbox {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+   
+}
+
+.child {
+    
+    height: 10%;
+}

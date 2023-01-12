@@ -1,0 +1,18 @@
+.titlepotion {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+}
+.img-potion {
+    padding-top: 0.5%;
+    width: 15%;
+    // border: solid rgb(0, 0, 0);
+    // border-radius: 15px;
+}
+.potion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

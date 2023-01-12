@@ -1,3 +1,10 @@
+@import "./components/AlchemyMenu.scss";
+@import "./components/Inventorygrid.scss";
+@import "./components/Potions.scss";
+@import "./components/Bestiary.scss";
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gray;
+  height: 100%;
+  margin: 0;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
