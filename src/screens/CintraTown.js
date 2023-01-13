@@ -9,22 +9,20 @@ const CintraTown = () => {
 
   return (
     <div className='CintraTown'>
-      <div>
-        <div className='flowerImage1 flowerImg'>
-          {show ? <FlowerImage show={show} setShow={setShow} /> : null}
-        </div>
-        <div className='flowerImage2 flowerImg'>
-          {show ? <FlowerImage show={show} setShow={setShow} /> : null}
-        </div>
-        <div className='flowerImage3 flowerImg'>
-          {show ? <FlowerImage show={show} setShow={setShow} /> : null}
-        </div>
-        <div className='flowerImage4 flowerImg'>
-          {show ? <FlowerImage show={show} setShow={setShow} /> : null}
-        </div>
-        <div className='flowerImage5 flowerImg'>
-          {show ? <FlowerImage show={show} setShow={setShow} /> : null}
-        </div>
+      <div className='flowerImage1 flowerImg'>
+        {show ? <FlowerImage show={show} setShow={setShow} /> : null}
+      </div>
+      <div className='flowerImage2 flowerImg'>
+        {show ? <FlowerImage show={show} setShow={setShow} /> : null}
+      </div>
+      <div className='flowerImage3 flowerImg'>
+        {show ? <FlowerImage show={show} setShow={setShow} /> : null}
+      </div>
+      <div className='flowerImage4 flowerImg'>
+        {show ? <FlowerImage show={show} setShow={setShow} /> : null}
+      </div>
+      <div className='flowerImage5 flowerImg'>
+        {show ? <FlowerImage show={show} setShow={setShow} /> : null}
       </div>
       <div className='sparkImage'>
         <Spark />
