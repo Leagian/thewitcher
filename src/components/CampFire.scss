@@ -7,16 +7,20 @@ $parts: 50;
 $partSize: 3em;
 
 .fireFlames {
+	margin: 0;
     background-image: url('../assets/campfire.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+	box-sizing: content-box;
 	font-size: 13px;
 	filter: blur($blur);
 	-webkit-filter: blur($blur);
 	position: absolute;
 	width: 4em;
 	height: 18em;
+	object-fit: contain;
+	object-position: center;
 }
 .particle {
 	animation: rise $dur ease-in infinite;
@@ -32,7 +36,7 @@ $partSize: 3em;
 	@for $p from 1 through $parts {
 		&:nth-of-type(#{$p}) {
 			animation-delay: $dur * random();
-			left: calc((100% - #{$partSize}) * #{($p - 1)/$parts});
+			left: calc((100% - #{$partSize}) * calc(($p - 1) / $parts)); 
 		}
 	}
 }
