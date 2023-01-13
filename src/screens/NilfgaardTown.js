@@ -1,5 +1,5 @@
 const Nilfgaard = () => {
-  return <div className='Nilfgaard'></div>
+  return <div className='NilfgaardTown'></div>
 }
 
 export default Nilfgaard

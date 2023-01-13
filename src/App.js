@@ -22,7 +22,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/map' element={<Map />} />
+        <Route path='map' element={<Map />} />
         <Route path='cintratown' element={<CintraTown />} />
         <Route path='nilfgaardtown' element={<NilfgaardTown />} />
         <Route path='kaermorhen' element={<KaerMorhen />} />
