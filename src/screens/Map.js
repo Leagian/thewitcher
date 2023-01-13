@@ -22,6 +22,13 @@ const Map = () => {
     zoomCounterRef.current.innerText = `${Math.round(zoom * 100)}%`
   }, [])
 
+  const [novigradHovered, setNovigradHovered] = useState(false)
+  const [kaermorhenHovered, setKaermorhenHovered] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+  const [nilfgaardHovered, setNilfgaardHovered] = useState(false)
+  const [beauclairHovered, setBeauclairHovered] = useState(false)
+  const [vizimaHovered, setVizimaHovered] = useState(false)
+
   return (
     <>
       <div className='map-global'>
@@ -30,26 +37,54 @@ const Map = () => {
           onZoomChange={onZoomChange}
           maxZoom={8}
           minZoom={1}
-          ref={prismaZoom}
+          ref={node => {
+            prismaZoom.current = node
+          }}
         >
-          <img src={witcherMapt9} className='map-image' />
-          <div className='novigrad-town'>
-            <Link to={'/cities/novigrad'}>Novigrad</Link>
+          <div className='link-town'>
+            <img src={witcherMapt9} className='map-image' />
+            <div className='towns'>
+              <div className='novigrad-town'>
+                <Link to={'/novigrad'}>Novigrad</Link>
+              </div>
+              <div className='kaermorhen-town'>
+                <Link to={'/kaermorhen'}>Kaer Morhen</Link>
+              </div>
+              <div className='cintra-town'>
+                <Link to={'/cintratown'}>Cintra</Link>
+              </div>
+              <div className='nilfgaard-town'>
+                <Link to={'/nilfgaardtown'}>Nilfgaard</Link>
+              </div>
+              <div className='beauclair-town'>
+                <Link to={'/beauclair'}>Beauclair</Link>
+              </div>
+              <div className='vizima-town'>
+                <Link to={'/vizima'}>Vizima</Link>
+              </div>
+            </div>
           </div>
-          <div className='kaermorhen-town'>
-            <Link to={'/cities/kaermorhen'}>Kaer Morhen</Link>
-          </div>
-          <div className='cintra-town'>
-            <Link to={'/cities/cintra'}>Cintra</Link>
-          </div>
-          <div className='nilfgaard-town'>
-            <Link to={'/cities/nilfgaard'}>Nilfgaard</Link>
-          </div>
-          <div className='beauclair-town'>
-            <Link to={'/cities/beauclair'}>Beauclair</Link>
-          </div>
-          <div className='vizima-town'>
-            <Link to={'/cities/vizima'}>Vizima</Link>
+          <div className='link-region'>
+            <div className='regions'>
+              <div className='kaedwen-region'>
+                <Link to={'/kaedwen'}>Kaedwen</Link>
+              </div>
+              <div className='cintra-region'>
+                <Link to={'/cintra'}>Cintra</Link>
+              </div>
+              <div className='redania-region'>
+                <Link to={'/redania'}>Redania</Link>
+              </div>
+              <div className='nilfgaard-region'>
+                <Link to={'/nilfgaard'}>Nilfgaard</Link>
+              </div>
+              <div className='toussaint-region'>
+                <Link to={'/toussaint'}>Toussaint</Link>
+              </div>
+              <div className='temeria-region'>
+                <Link to={'/temeria'}>Temeria</Link>
+              </div>
+            </div>
           </div>
         </PrismaZoom>
       </div>
