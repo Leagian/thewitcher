@@ -1,0 +1,53 @@
+.contenairSpark{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.spark {
+    position: absolute;
+    opacity: 0;
+    animation: twinkle 0.8s infinite alternate ease-in;
+    z-index: 300;
+}
+
+.spark-1 {
+    top: 1vh; left: 1vw;
+    transform: rotate(10deg);
+    animation-delay: 1s;
+}
+
+.spark-2 {
+    bottom: 1vh;
+    transform: rotate(25deg);
+    animation-delay: 0.5s;
+}
+
+.spark-3 {
+    bottom: 1vh; right: 0;
+    transform: rotate(45deg);
+    animation-delay: 0.3s;
+}
+
+.spark-4 {
+    top:.2vh;
+    transform: rotate(65deg);
+    animation-delay: 0.7s;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0 }
+    100% { opacity: 1}
+}
+
+/* glow */
+.spark:after {
+    content: '';
+    display: block;
+    margin-top: -32.5px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    filter: blur(13px);
+    opacity: 0.4;
+}
