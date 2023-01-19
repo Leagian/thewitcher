@@ -23,14 +23,15 @@
     width: 7vw;
     height: 9vh;
     border: 2px solid rgb(91, 8, 8);
-    border-radius: ;
   }
 .ingredient-image {
   margin-top: 1vh;
   width: 60%;
   height: 80%;
 }
-  
+.selected {
+  border: 2px solid blue;
+}
   
   
   
