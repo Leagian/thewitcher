@@ -1,79 +1,79 @@
 import { useState } from 'react'
 import {
-  NilfgaardModal,
-  NilfgaardModal1,
-  NilfgaardModal2,
-  NilfgaardModal3
-} from '../components/NilfgaardModal.js'
-import './NilfgaardModal.scss'
+  KaedwenModal,
+  KaedwenModal1,
+  KaedwenModal2,
+  KaedwenModal3
+} from '../components/KaedwenModal.js'
+import './KaedwenModal.scss'
 
-function NilfgaardRegionHistory() {
+function KaedwenRegionHistory() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className='RegionHistory'>
       <button
-        className='nOpenModalBtn'
+        className='kOpenModalBtn'
         onClick={() => {
           setOpenModal(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal closeModal={setOpenModal} />}
+      {openModal && <KaedwenModal closeModal={setOpenModal} />}
     </div>
   )
 }
 
-function NilfgaardRegionHistory1() {
+function KaedwenRegionHistory1() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className='RegionHistory'>
       <button
-        className='nOpenModalBtn1'
+        className='kOpenModalBtn1'
         onClick={() => {
           setOpenModal(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal1 closeModal={setOpenModal} />}
+      {openModal && <KaedwenModal1 closeModal={setOpenModal} />}
     </div>
   )
 }
 
-function NilfgaardRegionHistory2() {
+function KaedwenRegionHistory2() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className='RegionHistory'>
       <button
-        className='nOpenModalBtn2'
+        className='kOpenModalBtn2'
         onClick={() => {
           setOpenModal(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal2 closeModal={setOpenModal} />}
+      {openModal && <KaedwenModal2 closeModal={setOpenModal} />}
     </div>
   )
 }
 
-function NilfgaardRegionHistory3() {
+function KaedwenRegionHistory3() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className='RegionHistory'>
       <button
-        className='nOpenModalBtn3'
+        className='kOpenModalBtn3'
         onClick={() => {
           setOpenModal(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal3 closeModal={setOpenModal} />}
+      {openModal && <KaedwenModal3 closeModal={setOpenModal} />}
     </div>
   )
 }
 
 export {
-  NilfgaardRegionHistory,
-  NilfgaardRegionHistory1,
-  NilfgaardRegionHistory2,
-  NilfgaardRegionHistory3
+  KaedwenRegionHistory,
+  KaedwenRegionHistory1,
+  KaedwenRegionHistory2,
+  KaedwenRegionHistory3
 }

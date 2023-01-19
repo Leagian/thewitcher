@@ -5,8 +5,6 @@ import {
   NilfgaardRegionHistory3
 } from '../components/NilfgaardHistory'
 
-import Characters from '../components/Characters'
-
 const Nilfgaard = () => {
   return (
     <>
@@ -16,7 +14,9 @@ const Nilfgaard = () => {
         <NilfgaardRegionHistory2 />
         <NilfgaardRegionHistory3 />
       </div>
-      <Characters />
+      {/* <div className='CharactersComponents'>
+        <Characters />
+      </div> */}
     </>
   )
 }
