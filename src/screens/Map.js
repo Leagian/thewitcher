@@ -4,7 +4,7 @@ import PrismaZoom from 'react-prismazoom'
 import { Link } from 'react-router-dom'
 
 import witcherMapt9 from '../assets/WitcherMapX4T9.jpg'
-// import nilfgaardtitle from '../assets/nilfgaardtitle.svg'
+import nilfgaardtitle from '../assets/nilfgaardtitle.svg'
 // import fog from '../assets/fog.mp4'
 
 /* ZOOM CARTE */
@@ -131,6 +131,38 @@ const Map = () => {
     }
   }, [vizimaRef])
 
+  /* HOVER REGIONS */
+
+  // const [nilfgaardtitleHovered, setNilfgaardtitleHovered] = useState(false)
+  // const nilfgaardtitleRef = useRef(null)
+
+  // useEffect(() => {
+  //   const handleMouseEnter = () => setNilfgaardtitleHovered(true)
+  //   const handleMouseLeave = () => setNilfgaardtitleHovered(false)
+  //   if (nilfgaardtitleRef.current) {
+  //     nilfgaardtitleRef.current.addEventListener('mouseenter', handleMouseEnter)
+  //     nilfgaardtitleRef.current.addEventListener('mouseleave', handleMouseLeave)
+  //   }
+  //   return () => {
+  //     if (nilfgaardtitleRef.current) {
+  //       nilfgaardtitleRef.current.removeEventListener(
+  //         'mouseenter',
+  //         handleMouseEnter
+  //       )
+  //       nilfgaardtitleRef.current.removeEventListener(
+  //         'mouseleave',
+  //         handleMouseLeave
+  //       )
+  //     }
+  //   }
+  // }, [nilfgaardtitleRef])
+
+  // <div className='nilfgaard-region' ref={nilfgaardtitleRef}>
+  //               <Link to={'/nilfgaard'}>
+  //               {nilfgaardtitleHovered && <Link to={'/nilfgaard'}><img src={nilfgaardtitle} />
+  //               </Link>}
+  //             </div>
+
   return (
     <>
       <div className='map-global'>
@@ -198,7 +230,9 @@ const Map = () => {
                 <Link to={'/redania'}>Redania</Link>
               </div>
               <div className='nilfgaard-region'>
-                <Link to={'/nilfgaard'}>Nilfgaard</Link>
+                <Link to={'/nilfgaard'}>
+                  <img src={nilfgaardtitle} />
+                </Link>
               </div>
               <div className='toussaint-region'>
                 <Link to={'/toussaint'}>Toussaint</Link>
