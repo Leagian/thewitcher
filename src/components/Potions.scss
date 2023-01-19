@@ -1,15 +1,21 @@
-.titlepotion {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    color: burlywood;
+// .titlepotion {
+//     font-size: 15px;
+//     display: flex;
+//     justify-content: center;
+//     color: burlywood;
+// }
+.container-potion {
+    width: 60%;
+    height: 40%;
+    margin-top: 5vh;
+
 }
 .img-potion {
-    padding-top: 0.5%;
-    width: 15%;
-    // border: solid rgb(0, 0, 0);
-    // border-radius: 15px;
+    width: 100%;
+    height: 100%;
 }
+
+
 .potion {
     display: flex;
     justify-content: center;

@@ -2,13 +2,13 @@
 .menu {
     background-size: 100% 100%;
     background-image: url('../assets/wood\ board.png');
-    width: 75%;
-    height: 75%;
-    border-radius: 25px;
+    width: 80%;
+    height: 80%;
+    border-radius: 2px;
     
   }
 .titlemenu {
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 2vh;
     display: flex;
     justify-content: center;
@@ -27,7 +27,15 @@
    
 }
 
-.child {
-    
-    height: 10%;
+.child1 {
+    width: 25%;
+    height: 100%;
+}
+.child2 {
+    width: 33%;
+    height: 100%;
+}
+.child3 {
+    width: 33%;
+    height: 100%;
 }
