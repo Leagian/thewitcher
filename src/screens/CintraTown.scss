@@ -1,0 +1,97 @@
+.CintraTown {
+    height: 100vh;
+    background: no-repeat url(../assets/town/cintratown.png) ;
+    background-size: 100% 100%;
+}
+
+.flowerImage1{
+    width: 1vw;
+    height: 1vh;
+    position: relative;
+    top: 48vh; left: 79.3vw;
+}
+
+.flowerImage2{
+    width: 1vw;
+    height: 1vh;
+    position: relative;
+    top: 48vh; left: 77.8vw;
+}
+
+.flowerImage3{
+    width: 1vw;
+    height: 1vh;
+    position: relative;
+    top: 51vh; left: 72.6vw;
+}
+
+.flowerImage4{
+    width: 1vw;
+    height: 1vh;
+    position: relative;
+    top: 55vh; left: 64.6vw;
+}
+
+.flowerImage5{
+    width: 1vw;
+    height: 1vh;
+    position: relative;
+    top: 55.8vh; left: 62.2vw;
+}
+
+.flowerImg img{
+    box-sizing: content-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.flowerImg:hover{
+    animation: flickerAnimation 1.5s infinite;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+.sparkImage{
+    width: 1vw;
+    height: 1vh;
+    position: absolute;
+    top: 85vh; left: 31vw;
+}
+
+.sparkImage img{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    transition: transform .1s;
+}
+
+.light {
+    position: absolute;
+    top: 69vh;
+    left: 24.5vw;
+    width: 3vw;
+    height: 8vh;
+    border-radius: 50%;
+    background: #904220;
+    animation: light 2s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes light {
+    0%   {opacity: .4; transform: translate(0px) scale(1)}
+    50%  {opacity: .3; transform: translate(0px) scale(.9)}
+    100% {opacity: .1; transform: translate(0px) scale(1)}
+}
+
+.fireDiv{
+    overflow: hidden;
+    width: 5.46218487394958vw;
+    height: 25.49019607843137vh;
+    position: absolute;
+    top: 74.5vh; left: 77vw;
+}
