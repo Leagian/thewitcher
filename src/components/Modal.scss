@@ -3,38 +3,78 @@
 }
 
 .openModalBtn {
-    background-color: #3B3C3D;
+    background-color: #ffffff;
     border: none;
+    border-radius: 50%;
+    padding: 4px 4px;
     position: absolute;
     top: 120px; left: 120px;
-}
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: cyan 0px 0px 25px 5px;
 
+    &:hover {
+    //  filter: drop-shadow(0 0 0.1rem crimson) contrast(20);
+    padding: 6px 6px;
+    box-shadow: crimson 0px 0px 25px 5px;
+    //  crimson 0px -12px 30px,
+    //  crimson 0px 4px 6px,
+    //  crimson 0px 12px 13px,
+    //  crimson 0px -3px 5px;
+
+}
+}
 .openModalBtn1 {
-    background-color: #3B3C3D;
+    background-color: #ffffff;
     border: none;
+    border-radius: 50px 50px;
+    padding: 4px 4px;
     position: absolute;
     top: 310px; left: 340px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: cyan 0px 0px 25px 5px;
+
+    &:hover {
+     padding: 8px 8px;
+     top: 306px; left:336px;
+    }
 }
 
 .openModalBtn2 {
-    background-color: #3B3C3D;
+    background-color: #ffffff;
     border: none;
+    border-radius: 50px 50px;
+    padding: 4px 4px;
     position: absolute;
     top: 600px; right: 340px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: cyan 0px 0px 25px 5px;
 }
 
 .openModalBtn3 {
-    background-color: #3B3C3D;
+    background-color: #ffffff;
     border: none;
+    border-radius: 50px 50px;
+    padding: 4px 4px;
     position: absolute;
     top: 500px; right: 160px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: cyan 0px 0px 25px 5px;
 }
 
 .openModalBtn4 {
-    background-color: #3B3C3D;
+    background-color: #ffffff;
     border: none;
+    border-radius: 50px 50px;
+    padding: 4px 4px;
     position: absolute;
     top: 300px; left: 820px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: cyan 0px 0px 25px 5px;
 }
 
 // Contient la bulle
@@ -46,7 +86,7 @@
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 140px; left: 140px;
+    top: 130px; left: 130px;
     padding: 20px;
 }
 

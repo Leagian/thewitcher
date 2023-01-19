@@ -13,13 +13,11 @@ function NilfgaardRegionHistory() {
   return (
     <div className='RegionHistory'>
       <button
-        className='openModalBtn'
+        className='nOpenModalBtn'
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <NilfgaardModal closeModal={setOpenModal} />}
     </div>
   )
@@ -31,13 +29,11 @@ function NilfgaardRegionHistory1() {
   return (
     <div className='RegionHistory'>
       <button
-        className='openModalBtn1'
+        className='nOpenModalBtn1'
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <NilfgaardModal1 closeModal={setOpenModal} />}
     </div>
   )
@@ -49,13 +45,11 @@ function NilfgaardRegionHistory2() {
   return (
     <div className='RegionHistory'>
       <button
-        className='openModalBtn2'
+        className='nOpenModalBtn2'
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <NilfgaardModal2 closeModal={setOpenModal} />}
     </div>
   )
@@ -67,13 +61,11 @@ function NilfgaardRegionHistory3() {
   return (
     <div className='RegionHistory'>
       <button
-        className='openModalBtn3'
+        className='nOpenModalBtn3'
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <NilfgaardModal3 closeModal={setOpenModal} />}
     </div>
   )

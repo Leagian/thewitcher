@@ -1,21 +1,39 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Modal, Modal1, Modal2, Modal3, Modal4 } from '../components/Modal.js'
 import './Modal.scss'
 
 function RegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn'
+        ref={cintraRef}
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal closeModal={setCintraHovered} />}
     </div>
   )
 }
@@ -30,9 +48,7 @@ function RegionHistory1() {
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <Modal1 closeModal={setOpenModal} />}
     </div>
   )
@@ -48,9 +64,7 @@ function RegionHistory2() {
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <Modal2 closeModal={setOpenModal} />}
     </div>
   )
@@ -66,9 +80,7 @@ function RegionHistory3() {
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <Modal3 closeModal={setOpenModal} />}
     </div>
   )
@@ -84,9 +96,7 @@ function RegionHistory4() {
         onClick={() => {
           setOpenModal(true)
         }}
-      >
-        Open
-      </button>
+      ></button>
       {openModal && <Modal4 closeModal={setOpenModal} />}
     </div>
   )
