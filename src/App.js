@@ -1,7 +1,3 @@
-
-
-import Home from './screens/Home'
-
 import { Routes, Route } from 'react-router-dom'
 
 import CintraTown from './screens/CintraTown'
