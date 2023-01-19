@@ -2,80 +2,81 @@
     background-color: #11ffee00;
 }
 
-.nOpenModalBtn {
+.kOpenModalBtn {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 670px; left: 120px;
+    top: 270px; left: 420px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
-.nOpenModalBtn1 {
+.kOpenModalBtn1 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 310px; left: 370px;
+    top: 380px; left: 700px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
-.nOpenModalBtn2 {
+.kOpenModalBtn2 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 600px; right: 340px;
+    top: 320px; right: 600px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
 }
 
-.nOpenModalBtn3 {
+.kOpenModalBtn3 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 500px; right: 160px;
+    top: 220px; right: 160px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
 // Contient la bulle
-.nModalContainer {
+.kModalContainer {
     width: 310px;
-    height: 180px;
+    height: 250px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 620px; left: 167px;
+    top: 290px; left: 80px;
     padding: 20px;
 }
 
-.nModalContainer1 {
+.kModalContainer1 {
     width: 310px;
-    height: 200px;
+    height: 330px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 330px; left: 360px;
+    top: 30px; left: 750px;
     padding: 20px;
 }
 
-.nModalContainer2 {
+.kModalContainer2 {
     width: 310px;
     height: 240px;
     border-radius: 12px;
@@ -83,45 +84,45 @@
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 620px; right: 360px;
+    top: 330px; right: 245px;
     padding: 20px;
 }
 
-.nModalContainer3 {
+.kModalContainer3 {
     width: 310px;
-    height: 180px;
+    height: 340px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 520px; right: 180px;
+    top: 240px; right: 180px;
     padding: 20px;
 }
 
 // Titre de la bulle
-.nModalContainer .title {
+.kModalContainer .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer1 .title {
+.kModalContainer1 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer2 .title {
+.kModalContainer2 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer3 .title {
+.kModalContainer3 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
@@ -143,7 +144,7 @@
 }
 
 // Corps de texte de la bulle
-.nModalContainer .body {
+.kModalContainer .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -154,7 +155,7 @@
     text-align: left;
 }
 
-.nModalContainer1 .body {
+.kModalContainer1 .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -165,7 +166,7 @@
     text-align: left;
 }
 
-.nModalContainer2 .body {
+.kModalContainer2 .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -176,7 +177,7 @@
     text-align: left;
 }
 
-.nModalContainer3 .body {
+.kModalContainer3 .body {
     flex: 50%;
     display: flex;
     justify-content: center;

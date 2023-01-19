@@ -2,92 +2,116 @@
     background-color: #11ffee00;
 }
 
-.nOpenModalBtn {
+.tOpenModalBtn {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 670px; left: 120px;
+    top: 190px; left: 340px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
-.nOpenModalBtn1 {
+.tOpenModalBtn1 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 310px; left: 370px;
+    top: 160px; left: 760px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
-.nOpenModalBtn2 {
+.tOpenModalBtn2 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 600px; right: 340px;
+    top: 110px; right: 740px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
-.nOpenModalBtn3 {
+.tOpenModalBtn3 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
     padding: 4px 4px;
     position: absolute;
-    top: 500px; right: 160px;
+    top: 500px; right: 520px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: red 0px 0px 25px 5px;
+}
+
+.tOpenModalBtn4 {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 4px;
+    position: absolute;
+    top: 490px; right: 120px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: red 0px 0px 25px 5px;
+}
+
+.tOpenModalBtn5 {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 4px;
+    position: absolute;
+    bottom: 160px; right: 670px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
 }
 
 // Contient la bulle
-.nModalContainer {
+.tModalContainer {
     width: 310px;
-    height: 180px;
+    height: 280px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 620px; left: 167px;
+    top: 210px; left: 380px;
     padding: 20px;
 }
 
-.nModalContainer1 {
+.tModalContainer1 {
     width: 310px;
-    height: 200px;
+    height: 220px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 330px; left: 360px;
+    top: 170px; left: 810px;
     padding: 20px;
 }
 
-.nModalContainer2 {
+.tModalContainer2 {
     width: 310px;
-    height: 240px;
+    height: 340px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 620px; right: 360px;
+    top: 130px; right: 750px;
     padding: 20px;
 }
 
-.nModalContainer3 {
+.tModalContainer3 {
     width: 310px;
     height: 180px;
     border-radius: 12px;
@@ -99,29 +123,67 @@
     padding: 20px;
 }
 
+.tModalContainer4 {
+    width: 310px;
+    height: 210px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    top: 510px; right: 150px;
+    padding: 20px;
+}
+
+.tModalContainer5 {
+    width: 310px;
+    height: 310px;
+    border-radius: 12px;
+    background-color: #3B3C3D;
+    opacity: 0.9;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
+    position: absolute;
+    bottom: 180px; right: 330px;
+    padding: 20px;
+}
+
 // Titre de la bulle
-.nModalContainer .title {
+.tModalContainer .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer1 .title {
+.tModalContainer1 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer2 .title {
+.tModalContainer2 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
 }
 
-.nModalContainer3 .title {
+.tModalContainer3 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.tModalContainer4 .title {
+    display: inline-block;
+    text-align: left;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+}
+
+.tModalContainer5 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
@@ -143,7 +205,7 @@
 }
 
 // Corps de texte de la bulle
-.nModalContainer .body {
+.tModalContainer .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -154,7 +216,7 @@
     text-align: left;
 }
 
-.nModalContainer1 .body {
+.tModalContainer1 .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -165,7 +227,7 @@
     text-align: left;
 }
 
-.nModalContainer2 .body {
+.tModalContainer2 .body {
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -176,7 +238,29 @@
     text-align: left;
 }
 
-.nModalContainer3 .body {
+.tModalContainer3 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.tModalContainer4 .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #F1F1F1;
+    font-family:'Garamond', serif;
+    text-align: left;
+}
+
+.tModalContainer5 .body {
     flex: 50%;
     display: flex;
     justify-content: center;
