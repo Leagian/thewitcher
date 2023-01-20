@@ -5,8 +5,8 @@
 //     color: burlywood;
 // }
 .container-potion {
-    width: 60%;
-    height: 40%;
+    width: 50%;
+    height: 27vh ;
     margin-top: 5vh;
 
 }
@@ -21,4 +21,24 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.counter {
+    font-size: 20px;
+    color: burlywood;
+}
+.counter-container {
+    margin-top: 2vh;
+}
+.button-mix {
+    color: burlywood;
+    background-color: black;
+    font-size: 20px;
+}
+.cauldron-container {
+    width: 100%;
+    ;
+
+}
+.cauldron-image {
+width: 100%;
 }
