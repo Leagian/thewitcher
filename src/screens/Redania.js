@@ -7,6 +7,8 @@ import {
   RedaniaRegionHistory5
 } from '../components/RedaniaHistory'
 
+import Characters from '../components/Characters'
+
 const Redania = () => {
   return (
     <>
@@ -18,6 +20,7 @@ const Redania = () => {
         <RedaniaRegionHistory4 />
         <RedaniaRegionHistory5 />
       </div>
+      <Characters characterRegion='redania' />
     </>
   )
 }
