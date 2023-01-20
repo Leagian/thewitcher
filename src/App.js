@@ -1,3 +1,5 @@
+import AlchemyMenu from './components/AlchemyMenu'
+
 import { Routes, Route } from 'react-router-dom'
 
 import CintraTown from './screens/CintraTown'
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className='App'>
       <Routes>
+        <Route path='/alchemy' element={<AlchemyMenu />} />
         <Route path='/' element={<Home />} />
         <Route path='map' element={<Map />} />
         <Route path='cintratown' element={<CintraTown />} />

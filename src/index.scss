@@ -1,3 +1,8 @@
+@import "./components/AlchemyMenu.scss";
+@import "./components/Inventorygrid.scss";
+@import "./components/Potions.scss";
+@import "./components/Bestiary.scss";
+
 @import './App.scss';
 @import './screens/Home.scss';
 @import './screens/CintraTown.scss';
@@ -26,9 +31,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
