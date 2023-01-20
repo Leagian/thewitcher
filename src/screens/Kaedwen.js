@@ -5,6 +5,8 @@ import {
   KaedwenRegionHistory3
 } from '../components/KaedwenHistory'
 
+import Characters from '../components/Characters'
+
 const Kaedwen = () => {
   return (
     <>
@@ -14,6 +16,7 @@ const Kaedwen = () => {
         <KaedwenRegionHistory2 />
         <KaedwenRegionHistory3 />
       </div>
+      <Characters characterRegion='kaedwen' />
     </>
   )
 }
