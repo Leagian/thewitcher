@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 
 import CharactersCard from './CharactersCard'
 
-const Characters = () => {
+const Characters = props => {
   const [charactersInfo, setCharactersInfos] = useState([])
-  const { regionId } = useParams()
+  // const { regionId } = useParams()
 
   useEffect(() => {
     fetch('http://localhost:4242/')
@@ -18,7 +18,8 @@ const Characters = () => {
       <div className='charac-global'>
         {charactersInfo
           .filter(
-            CharacterFilterRegion => CharacterFilterRegion.region === regionId
+            CharacterFilterRegion =>
+              CharacterFilterRegion.region === props.characterRegion
           )
 
           .map(CharacterMap => (
