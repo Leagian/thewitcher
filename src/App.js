@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route path='/alchemy' element={<AlchemyMenu />} />
         <Route path='/' element={<Home />} />
-        <Route path='/map' element={<Map />} />
+        <Route path='map' element={<Map />} />
         <Route path='cintratown' element={<CintraTown />} />
         <Route path='nilfgaardtown' element={<NilfgaardTown />} />
         <Route path='kaermorhen' element={<KaerMorhen />} />

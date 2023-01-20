@@ -1,11 +1,26 @@
 import React from 'react'
 import './Modal.scss'
+import { useState, useEffect, useRef } from 'react'
 
 function Modal({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer'>
-        <div className='titleCloseBtn'>
+        {/* <div className='titleCloseBtn'>
           <button
             onClick={() => {
               closeModal(false)
@@ -13,7 +28,7 @@ function Modal({ closeModal }) {
           >
             X
           </button>
-        </div>
+        </div> */}
         <div className='title'>
           <h2>Cintra</h2>
         </div>

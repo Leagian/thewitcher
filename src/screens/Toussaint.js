@@ -1,5 +1,29 @@
+import {
+  ToussaintRegionHistory,
+  ToussaintRegionHistory1,
+  ToussaintRegionHistory2,
+  ToussaintRegionHistory3,
+  ToussaintRegionHistory4,
+  ToussaintRegionHistory5,
+  ToussaintRegionHistory6,
+  ToussaintRegionHistory7
+} from '../components/ToussaintHistory'
+
 const Toussaint = () => {
-  return <div className='Toussaint'></div>
+  return (
+    <>
+      <div className='Toussaint'>
+        <ToussaintRegionHistory />
+        <ToussaintRegionHistory1 />
+        <ToussaintRegionHistory2 />
+        <ToussaintRegionHistory3 />
+        <ToussaintRegionHistory4 />
+        <ToussaintRegionHistory5 />
+        <ToussaintRegionHistory6 />
+        <ToussaintRegionHistory7 />
+      </div>
+    </>
+  )
 }
 
 export default Toussaint
