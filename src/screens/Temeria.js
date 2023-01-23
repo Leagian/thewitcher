@@ -7,6 +7,8 @@ import {
   TemeriaRegionHistory5
 } from '../components/TemeriaHistory'
 
+import Characters from '../components/Characters'
+
 const Temeria = () => {
   return (
     <>
@@ -18,6 +20,7 @@ const Temeria = () => {
         <TemeriaRegionHistory4 />
         <TemeriaRegionHistory5 />
       </div>
+      <Characters characterRegion='temeria' />
     </>
   )
 }
