@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import FlowerImage from '../components/FlowerImage'
 import Spark from '../components/Spark'
-import CampFire from '../components/CampFire'
+import NavMenu from '../components/NavMenu'
 
 const CintraTown = () => {
   const [show, setShow] = useState(true)
@@ -28,9 +28,7 @@ const CintraTown = () => {
         <Spark />
       </div>
       <div className='light'></div>
-      <div className='fireDiv'>
-        <CampFire />
-      </div>
+      <NavMenu />
     </div>
   )
 }
