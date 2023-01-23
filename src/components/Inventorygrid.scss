@@ -1,0 +1,39 @@
+.titleinventory {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: burlywood;
+    margin-left:5vh ;
+    margin-top: 5vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 100%;
+    width: 100%;
+    row-gap: 2vh;
+    margin-left: 6vh;
+    margin-top: 4vh;
+
+  }
+  
+  .grid-cell {
+    display: flex;
+    justify-content: center;
+    width: 7vw;
+    height: 9vh;
+    border: 2px solid rgb(91, 8, 8);
+  }
+.ingredient-image {
+  margin-top: 1vh;
+  width: 60%;
+  height: 80%;
+}
+.selected {
+  border: 2px solid blue;
+}
+  
+  
+  
+  

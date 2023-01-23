@@ -1,10 +1,16 @@
+@import "./components/AlchemyMenu.scss";
+@import "./components/Inventorygrid.scss";
+@import "./components/Potions.scss";
+@import "./components/Bestiary.scss";
+
 @import './App.scss';
+@import './screens/Home.scss';
 @import './screens/CintraTown.scss';
 @import './screens/KaerMorhen.scss';
 @import './screens/NilfgaardTown.scss';
 @import './screens/Beauclair.scss';
 @import './screens/Novigrad.scss';
-@import './screens/vizima.scss';
+@import './screens/Vizima.scss';
 @import './components/Spark.scss';
 @import './components/CampFire.scss';
 @import './screens/Map.scss';
@@ -25,9 +31,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
