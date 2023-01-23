@@ -24,7 +24,7 @@ const CintraTown = () => {
       <div className='flowerImage5 flowerImg'>
         {show ? <FlowerImage show={show} setShow={setShow} /> : null}
       </div>
-      <div className='sparkImage'>
+      <div className='sparkImageCintra'>
         <Spark />
       </div>
       <div className='light'></div>

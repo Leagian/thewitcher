@@ -1,93 +1,175 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Modal, Modal1, Modal2, Modal3, Modal4 } from '../components/Modal.js'
 import './Modal.scss'
 
 function RegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn'
+        ref={cintraRef}
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal closeModal={setCintraHovered} />}
     </div>
   )
 }
 
 function RegionHistory1() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn1'
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal1 closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal1 closeModal={setCintraHovered} />}
     </div>
   )
 }
 
 function RegionHistory2() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn2'
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal2 closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal2 closeModal={setCintraHovered} />}
     </div>
   )
 }
 
 function RegionHistory3() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn3'
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal3 closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal3 closeModal={setCintraHovered} />}
     </div>
   )
 }
 
 function RegionHistory4() {
-  const [openModal, setOpenModal] = useState(false)
+  const [cintraHovered, setCintraHovered] = useState(false)
+
+  const cintraRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setCintraHovered(true)
+
+    // const handleMouseLeave = () => setCintraHovered(false)
+    if (cintraRef.current) {
+      cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
+      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
+    }
+    return () => {
+      if (cintraRef.current) {
+        cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
+        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }
+  }, [cintraRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='openModalBtn4'
         onClick={() => {
-          setOpenModal(true)
+          setCintraHovered(true)
         }}
-      >
-        Open
-      </button>
-      {openModal && <Modal4 closeModal={setOpenModal} />}
+      ></button>
+      {cintraHovered && <Modal4 closeModal={setCintraHovered} />}
     </div>
   )
 }

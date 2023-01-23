@@ -16,7 +16,7 @@ const Nilfgaard = () => {
         <NilfgaardRegionHistory2 />
         <NilfgaardRegionHistory3 />
       </div>
-      <Characters />
+      <Characters characterRegion='nilfgaard' />
     </>
   )
 }

@@ -1,5 +1,28 @@
+import {
+  TemeriaRegionHistory,
+  TemeriaRegionHistory1,
+  TemeriaRegionHistory2,
+  TemeriaRegionHistory3,
+  TemeriaRegionHistory4,
+  TemeriaRegionHistory5
+} from '../components/TemeriaHistory'
+
+import Characters from '../components/Characters'
+
 const Temeria = () => {
-  return <div className='Temeria'></div>
+  return (
+    <>
+      <div className='Temeria'>
+        <TemeriaRegionHistory />
+        <TemeriaRegionHistory1 />
+        <TemeriaRegionHistory2 />
+        <TemeriaRegionHistory3 />
+        <TemeriaRegionHistory4 />
+        <TemeriaRegionHistory5 />
+      </div>
+      <Characters characterRegion='temeria' />
+    </>
+  )
 }
 
 export default Temeria

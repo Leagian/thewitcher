@@ -56,14 +56,14 @@
     100% { opacity:1; }
 }
 
-.sparkImage{
+.sparkImageCintra{
     width: 1vw;
     height: 1vh;
     position: absolute;
     top: 85vh; left: 31vw;
 }
 
-.sparkImage img{
+.sparkImageCintra img{
     box-sizing: content-box;
     width: 100%;
     height: 100%;
@@ -79,7 +79,7 @@
     border-radius: 50%;
     background: #904220;
     animation: light 2s linear infinite alternate;
-    filter: blur(10px);
+    filter: blur(8px);
 }
 
 @keyframes light {
@@ -88,10 +88,10 @@
     100% {opacity: .1; transform: translate(0px) scale(1)}
 }
 
-.fireDiv{
-    overflow: hidden;
-    width: 5.46218487394958vw;
-    height: 25.49019607843137vh;
-    position: absolute;
-    top: 74.5vh; left: 77vw;
-}
+// .fireDiv{
+//     overflow: hidden;
+//     width: 5.46218487394958vw;
+//     height: 25.49019607843137vh;
+//     position: absolute;
+//     top: 74.5vh; left: 77vw;
+// }
