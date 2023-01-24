@@ -1,19 +1,25 @@
 import React from 'react'
 import './RedaniaModal.scss'
+import { useEffect, useRef } from 'react'
 
 function RedaniaModal({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Redania</h2>
         </div>
@@ -33,18 +39,23 @@ function RedaniaModal({ closeModal }) {
 }
 
 function RedaniaModal1({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer1'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Ancient Times</h2>
         </div>
@@ -62,18 +73,23 @@ function RedaniaModal1({ closeModal }) {
 }
 
 function RedaniaModal2({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer2'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Northern Wars</h2>
         </div>
@@ -105,18 +121,23 @@ function RedaniaModal2({ closeModal }) {
 }
 
 function RedaniaModal3({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer3'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Society</h2>
         </div>
@@ -141,18 +162,23 @@ function RedaniaModal3({ closeModal }) {
 }
 
 function RedaniaModal4({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer4'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Culture</h2>
         </div>
@@ -174,18 +200,23 @@ function RedaniaModal4({ closeModal }) {
 }
 
 function RedaniaModal5({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer5'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Economy and trade</h2>
         </div>

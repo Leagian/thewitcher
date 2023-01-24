@@ -16,6 +16,7 @@ const Kaedwen = () => {
         <KaedwenRegionHistory2 />
         <KaedwenRegionHistory3 />
       </div>
+      <div className='kaedwenCastleLight'></div>
       <Characters characterRegion='kaedwen' />
     </>
   )

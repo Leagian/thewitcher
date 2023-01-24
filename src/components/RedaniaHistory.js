@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import {
   RedaniaModal,
   RedaniaModal1,
@@ -10,97 +11,193 @@ import {
 import './RedaniaModal.scss'
 
 function RedaniaRegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal closeModal={setRedaniaHovered} />}
     </div>
   )
 }
 
 function RedaniaRegionHistory1() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn1'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal1 closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal1 closeModal={setRedaniaHovered} />}
     </div>
   )
 }
 
 function RedaniaRegionHistory2() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn2'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal2 closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal2 closeModal={setRedaniaHovered} />}
     </div>
   )
 }
 
 function RedaniaRegionHistory3() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn3'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal3 closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal3 closeModal={setRedaniaHovered} />}
     </div>
   )
 }
 
 function RedaniaRegionHistory4() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn4'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal4 closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal4 closeModal={setRedaniaHovered} />}
     </div>
   )
 }
 
 function RedaniaRegionHistory5() {
-  const [openModal, setOpenModal] = useState(false)
+  const [redaniaHovered, setRedaniaHovered] = useState(false)
+
+  const redaniaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setRedaniaHovered(true)
+
+    if (redaniaRef.current) {
+      redaniaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (redaniaRef.current) {
+        redaniaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [redaniaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='rOpenModalBtn5'
+        ref={redaniaRef}
         onClick={() => {
-          setOpenModal(true)
+          setRedaniaHovered(true)
         }}
       ></button>
-      {openModal && <RedaniaModal5 closeModal={setOpenModal} />}
+      {redaniaHovered && <RedaniaModal5 closeModal={setRedaniaHovered} />}
     </div>
   )
 }

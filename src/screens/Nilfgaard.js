@@ -16,6 +16,7 @@ const Nilfgaard = () => {
         <NilfgaardRegionHistory2 />
         <NilfgaardRegionHistory3 />
       </div>
+      <div className='nilfgaardCastleLight'></div>
       <Characters characterRegion='nilfgaard' />
     </>
   )

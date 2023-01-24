@@ -24,6 +24,7 @@ const Toussaint = () => {
         <ToussaintRegionHistory6 />
         <ToussaintRegionHistory7 />
       </div>
+      <div className='toussaintCastleLight'></div>
       <Characters characterRegion='toussaint' />
     </>
   )

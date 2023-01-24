@@ -11,15 +11,12 @@ function RegionHistory() {
   useEffect(() => {
     const handleMouseEnter = () => setCintraHovered(true)
 
-    // const handleMouseLeave = () => setCintraHovered(false)
     if (cintraRef.current) {
       cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
-      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
     return () => {
       if (cintraRef.current) {
         cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
-        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [cintraRef])
@@ -46,15 +43,12 @@ function RegionHistory1() {
   useEffect(() => {
     const handleMouseEnter = () => setCintraHovered(true)
 
-    // const handleMouseLeave = () => setCintraHovered(false)
     if (cintraRef.current) {
       cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
-      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
     return () => {
       if (cintraRef.current) {
         cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
-        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [cintraRef])
@@ -63,6 +57,7 @@ function RegionHistory1() {
     <div className='RegionHistory'>
       <button
         className='openModalBtn1'
+        ref={cintraRef}
         onClick={() => {
           setCintraHovered(true)
         }}
@@ -80,15 +75,12 @@ function RegionHistory2() {
   useEffect(() => {
     const handleMouseEnter = () => setCintraHovered(true)
 
-    // const handleMouseLeave = () => setCintraHovered(false)
     if (cintraRef.current) {
       cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
-      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
     return () => {
       if (cintraRef.current) {
         cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
-        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [cintraRef])
@@ -97,6 +89,7 @@ function RegionHistory2() {
     <div className='RegionHistory'>
       <button
         className='openModalBtn2'
+        ref={cintraRef}
         onClick={() => {
           setCintraHovered(true)
         }}
@@ -114,15 +107,12 @@ function RegionHistory3() {
   useEffect(() => {
     const handleMouseEnter = () => setCintraHovered(true)
 
-    // const handleMouseLeave = () => setCintraHovered(false)
     if (cintraRef.current) {
       cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
-      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
     return () => {
       if (cintraRef.current) {
         cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
-        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [cintraRef])
@@ -131,6 +121,7 @@ function RegionHistory3() {
     <div className='RegionHistory'>
       <button
         className='openModalBtn3'
+        ref={cintraRef}
         onClick={() => {
           setCintraHovered(true)
         }}
@@ -148,15 +139,12 @@ function RegionHistory4() {
   useEffect(() => {
     const handleMouseEnter = () => setCintraHovered(true)
 
-    // const handleMouseLeave = () => setCintraHovered(false)
     if (cintraRef.current) {
       cintraRef.current.addEventListener('mouseenter', handleMouseEnter)
-      // cintraRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
     return () => {
       if (cintraRef.current) {
         cintraRef.current.removeEventListener('mouseenter', handleMouseEnter)
-        // cintraRef.current.removeEventListener('mouseleave', handleMouseLeave)
       }
     }
   }, [cintraRef])
@@ -165,6 +153,7 @@ function RegionHistory4() {
     <div className='RegionHistory'>
       <button
         className='openModalBtn4'
+        ref={cintraRef}
         onClick={() => {
           setCintraHovered(true)
         }}

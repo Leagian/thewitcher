@@ -20,6 +20,7 @@ const Redania = () => {
         <RedaniaRegionHistory4 />
         <RedaniaRegionHistory5 />
       </div>
+      <div className='redaniaCastleLight'></div>
       <Characters characterRegion='redania' />
     </>
   )
