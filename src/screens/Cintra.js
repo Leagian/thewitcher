@@ -5,6 +5,7 @@ import {
   RegionHistory3,
   RegionHistory4
 } from '../components/RegionHistory.js'
+import NavMenu from '../components/NavMenu'
 
 import Characters from '../components/Characters'
 
@@ -18,6 +19,7 @@ const Cintra = () => {
         <RegionHistory3 />
         <RegionHistory4 />
       </div>
+      <NavMenu />
       <Characters characterRegion='cintra' />
     </>
   )

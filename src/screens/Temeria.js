@@ -8,6 +8,7 @@ import {
 } from '../components/TemeriaHistory'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Temeria = () => {
   return (
@@ -20,6 +21,7 @@ const Temeria = () => {
         <TemeriaRegionHistory4 />
         <TemeriaRegionHistory5 />
       </div>
+      <NavMenu />
       <Characters characterRegion='temeria' />
     </>
   )

@@ -10,6 +10,7 @@ import {
 } from '../components/ToussaintHistory'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Toussaint = () => {
   return (
@@ -24,6 +25,7 @@ const Toussaint = () => {
         <ToussaintRegionHistory6 />
         <ToussaintRegionHistory7 />
       </div>
+      <NavMenu />
       <Characters characterRegion='toussaint' />
     </>
   )
