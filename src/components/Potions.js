@@ -1,18 +1,24 @@
 import { useState, useEffect } from 'react'
 import cauldron from '../assets/cauldron.png'
 const Potions = props => {
-  const [selectedPotion, setSelectedPotion] = useState(null)
+  const [selectedPotion, setSelectedPotion] = useState()
   const [selectedCount, setSelectedCount] = useState(0)
+  const [buttonClicked, setButtonClicked] = useState(false)
 
   useEffect(() => {
     setSelectedCount(props.selectedIngredients.length)
   }, [props.selectedIngredients])
 
   const handleClick = () => {
+    setButtonClicked(true)
     const filteredPotions = props.potions.filter(potion => {
-      return props.selectedIngredients.every(ingredient => {
-        return potion.ingredients.includes(ingredient.name)
-      })
+      const potionIngredients = potion.ingredients
+        .split(',')
+        .map(ingredient => ingredient.trim())
+      const intersection = props.selectedIngredients.filter(ingredient =>
+        potionIngredients.includes(ingredient.name)
+      )
+      return intersection.length === 2
     })
 
     setSelectedPotion(filteredPotions[0])
@@ -27,6 +33,12 @@ const Potions = props => {
             src={selectedPotion.image}
             alt={selectedPotion.name}
           />
+        )}
+        {!selectedPotion && buttonClicked && (
+          <div className='invalide-mix'>
+            This mix doesn't make anything. <br /> Try looking at the
+            ingredients description to get a clue of the possible mixes.
+          </div>
         )}
       </div>
       <div className='button-container'>
