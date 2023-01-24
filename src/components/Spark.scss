@@ -11,7 +11,7 @@
 }
 
 .spark-1 {
-    top: 1vh; left: 1vw;
+    top: 0vh; left: 1vw;
     transform: rotate(10deg);
     animation-delay: 1s;
 }
@@ -49,5 +49,5 @@
     height: 30px;
     border-radius: 50%;
     filter: blur(13px);
-    opacity: 0.4;
+    opacity: 0.2;
 }

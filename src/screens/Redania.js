@@ -8,6 +8,7 @@ import {
 } from '../components/RedaniaHistory'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Redania = () => {
   return (
@@ -21,6 +22,7 @@ const Redania = () => {
         <RedaniaRegionHistory5 />
       </div>
       <div className='redaniaCastleLight'></div>
+      <NavMenu />
       <Characters characterRegion='redania' />
     </>
   )

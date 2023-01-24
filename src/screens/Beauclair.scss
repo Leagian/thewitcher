@@ -3,3 +3,25 @@
     background: no-repeat url(../assets/town/beauclair.png) ;
     background-size: 100% 100%;
 }
+
+.sparkImageBeauclair1{
+    width: 1vw;
+    height: 1vh;
+    position: absolute;
+    top: 80vh; left: 16vw;
+}
+
+.sparkImageBeauclair2{
+    width: 1vw;
+    height: 1vh;
+    position: absolute;
+    top: 55vh; left: 77vw;
+}
+
+.sparkImageBeauclair1 img,
+.sparkImageBeauclair2 img{
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    transition: transform .1s;
+}
