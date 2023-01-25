@@ -6,6 +6,7 @@ import {
 } from '../components/NilfgaardHistory'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Nilfgaard = () => {
   return (
@@ -16,6 +17,8 @@ const Nilfgaard = () => {
         <NilfgaardRegionHistory2 />
         <NilfgaardRegionHistory3 />
       </div>
+      <div className='nilfgaardCastleLight'></div>
+      <NavMenu />
       <Characters characterRegion='nilfgaard' />
     </>
   )

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import {
   ToussaintModal,
   ToussaintModal1,
@@ -12,129 +13,257 @@ import {
 import './ToussaintModal.scss'
 
 function ToussaintRegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory1() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn1'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal1 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal1 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory2() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn2'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal2 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal2 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory3() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn3'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal3 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal3 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory4() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn4'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal4 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal4 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory5() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn5'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal5 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal5 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory6() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn6'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal6 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal6 closeModal={setToussaintHovered} />}
     </div>
   )
 }
 
 function ToussaintRegionHistory7() {
-  const [openModal, setOpenModal] = useState(false)
+  const [toussaintHovered, setToussaintHovered] = useState(false)
+
+  const toussaintRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setToussaintHovered(true)
+
+    if (toussaintRef.current) {
+      toussaintRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (toussaintRef.current) {
+        toussaintRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [toussaintRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='toOpenModalBtn7'
+        ref={toussaintRef}
         onClick={() => {
-          setOpenModal(true)
+          setToussaintHovered(true)
         }}
       ></button>
-      {openModal && <ToussaintModal7 closeModal={setOpenModal} />}
+      {toussaintHovered && <ToussaintModal7 closeModal={setToussaintHovered} />}
     </div>
   )
 }

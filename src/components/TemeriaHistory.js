@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import {
   TemeriaModal,
   TemeriaModal1,
@@ -10,97 +11,193 @@ import {
 import './TemeriaModal.scss'
 
 function TemeriaRegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal closeModal={setTemeriaHovered} />}
     </div>
   )
 }
 
 function TemeriaRegionHistory1() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn1'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal1 closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal1 closeModal={setTemeriaHovered} />}
     </div>
   )
 }
 
 function TemeriaRegionHistory2() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn2'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal2 closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal2 closeModal={setTemeriaHovered} />}
     </div>
   )
 }
 
 function TemeriaRegionHistory3() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn3'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal3 closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal3 closeModal={setTemeriaHovered} />}
     </div>
   )
 }
 
 function TemeriaRegionHistory4() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn4'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal4 closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal4 closeModal={setTemeriaHovered} />}
     </div>
   )
 }
 
 function TemeriaRegionHistory5() {
-  const [openModal, setOpenModal] = useState(false)
+  const [temeriaHovered, setTemeriaHovered] = useState(false)
+
+  const temeriaRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setTemeriaHovered(true)
+
+    if (temeriaRef.current) {
+      temeriaRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (temeriaRef.current) {
+        temeriaRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [temeriaRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='tOpenModalBtn5'
+        ref={temeriaRef}
         onClick={() => {
-          setOpenModal(true)
+          setTemeriaHovered(true)
         }}
       ></button>
-      {openModal && <TemeriaModal5 closeModal={setOpenModal} />}
+      {temeriaHovered && <TemeriaModal5 closeModal={setTemeriaHovered} />}
     </div>
   )
 }
