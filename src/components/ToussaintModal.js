@@ -1,19 +1,25 @@
 import React from 'react'
 import './ToussaintModal.scss'
+import { useEffect, useRef } from 'react'
 
 function ToussaintModal({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Toussaint</h2>
         </div>
@@ -34,18 +40,23 @@ function ToussaintModal({ closeModal }) {
 }
 
 function ToussaintModal1({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer1'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Toussaint</h2>
         </div>
@@ -67,18 +78,23 @@ function ToussaintModal1({ closeModal }) {
 }
 
 function ToussaintModal2({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer2'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Prehistory and Ancient Times</h2>
         </div>
@@ -103,18 +119,23 @@ function ToussaintModal2({ closeModal }) {
 }
 
 function ToussaintModal3({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer3'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Human conquest and fragmented land</h2>
         </div>
@@ -143,18 +164,23 @@ function ToussaintModal3({ closeModal }) {
 }
 
 function ToussaintModal4({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer4'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Human conquest and fragmented land</h2>
         </div>
@@ -181,18 +207,23 @@ function ToussaintModal4({ closeModal }) {
 }
 
 function ToussaintModal5({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer5'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Reforms</h2>
         </div>
@@ -222,18 +253,23 @@ function ToussaintModal5({ closeModal }) {
 }
 
 function ToussaintModal6({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer6'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>13th Century</h2>
         </div>
@@ -259,18 +295,23 @@ function ToussaintModal6({ closeModal }) {
 }
 
 function ToussaintModal7({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer7'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Society, culture and economy</h2>
         </div>

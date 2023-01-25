@@ -21,6 +21,7 @@ const Temeria = () => {
         <TemeriaRegionHistory4 />
         <TemeriaRegionHistory5 />
       </div>
+      <div className='temeriaVillageLight'></div>
       <NavMenu />
       <Characters characterRegion='temeria' />
     </>

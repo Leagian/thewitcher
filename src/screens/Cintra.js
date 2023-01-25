@@ -19,6 +19,7 @@ const Cintra = () => {
         <RegionHistory3 />
         <RegionHistory4 />
       </div>
+      <div className='cintraCastleLight'></div>
       <NavMenu />
       <Characters characterRegion='cintra' />
     </>
