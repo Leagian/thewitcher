@@ -10,10 +10,10 @@ const Novigrad = () => {
   return (
     <div className='Novigrad'>
       <div className='sparkImageNovi1'>
-        {show ? <Spark show={show} setShow={setShow} /> : null}
+        {show ? <Spark show={show} setShow={setShow} id={1} /> : null}
       </div>
       <div className='sparkImageNovi2'>
-        {show1 ? <Spark1 show1={show1} setShow1={setShow1} /> : null}
+        {show1 ? <Spark1 show1={show1} setShow1={setShow1} id={2} /> : null}
       </div>
       <NavMenu />
     </div>

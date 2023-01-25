@@ -1,9 +1,19 @@
+import { useEffect } from 'react'
 const Spark1 = props => {
+  useEffect(() => {
+    const storageKey = `spark_${props.id}`
+    const storedValue = localStorage.getItem(storageKey)
+    if (storedValue === 'true') {
+      props.setShow1(false)
+    }
+  }, [])
+
+  const spark1Click = () => {
+    localStorage.setItem(`spark_${props.id}`, true)
+    props.setShow1(!props.show1)
+  }
   return (
-    <div
-      className='contenairSpark'
-      onClick={() => props.setShow1(!props.show1)}
-    >
+    <div className='contenairSpark' onClick={spark1Click}>
       <div className='spark spark-1'>
         <svg viewBox='0 0 124.69 124.69' width='5px' fill='#fff'>
           <path
