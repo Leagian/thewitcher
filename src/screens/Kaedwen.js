@@ -5,6 +5,8 @@ import {
   KaedwenRegionHistory3
 } from '../components/KaedwenHistory'
 
+import video from '../assets/video.mp4'
+
 import Characters from '../components/Characters'
 
 const Kaedwen = () => {
@@ -15,8 +17,18 @@ const Kaedwen = () => {
         <KaedwenRegionHistory1 />
         <KaedwenRegionHistory2 />
         <KaedwenRegionHistory3 />
+        <div className='screenScroll-down'></div>
       </div>
-      <Characters characterRegion='kaedwen' />
+      <div className='screen-background'>
+        <Characters characterRegion='kaedwen' />
+        <video
+          id='myVideo'
+          src={video}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        ></video>
+      </div>
     </>
   )
 }
