@@ -5,6 +5,23 @@
     background-size: 100% 100%;
 }
 
+
+// background video
+
+.screen-background {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+#myVideo {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 .nilfgaardCastleLight {
     position: absolute;
     top: 59vh;
