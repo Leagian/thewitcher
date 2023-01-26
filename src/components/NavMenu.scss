@@ -1,0 +1,18 @@
+.btn-global{
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    right: -5%;
+    top: 74%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.btn-circle {
+    position: absolute;
+    width: 150px;
+    z-index: 10;
+    cursor: pointer;
+}

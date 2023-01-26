@@ -6,72 +6,102 @@
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
-    top: 210px; left: 360px;
+    top: 410px; left: 660px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 .rOpenModalBtn1 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
-    top: 260px; left: 770px;
+    top: 340px; left: 800px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 .rOpenModalBtn2 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
-    top: 250px; right: 860px;
+    top: 250px; right: 850px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 .rOpenModalBtn3 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
-    top: 500px; right: 650px;
+    top: 500px; right: 690px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 .rOpenModalBtn4 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
-    top: 490px; right: 160px;
+    top: 580px; right: 260px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 .rOpenModalBtn5 {
     background-color: #ffffff;
     border: none;
     border-radius: 50%;
-    padding: 4px 4px;
+    padding: 6px 6px;
     position: absolute;
     bottom: 160px; right: 670px;
     cursor: pointer;
     transition: .5s;
     box-shadow: red 0px 0px 25px 5px;
+
+    &:hover {
+        padding: 8px 8px;
+        box-shadow: red 0px 0px 25px 5px;
+    }
 }
 
 // Contient la bulle
@@ -83,7 +113,7 @@
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 230px; left: 380px;
+    top: 130px; left: 310px;
     padding: 20px;
 }
 
@@ -95,7 +125,7 @@
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 280px; left: 810px;
+    top: 280px; left: 820px;
     padding: 20px;
 }
 
@@ -131,7 +161,7 @@
     opacity: 0.9;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 5px;
     position: absolute;
-    top: 510px; right: 200px;
+    top: 235px; right: 200px;
     padding: 20px;
 }
 
@@ -188,20 +218,6 @@
     text-align: left;
     color: #F1F1F1;
     font-family:'Garamond', serif;
-}
-
-// boite contenant le bouton croix qui ferme la bulle
-.titleCloseBtn {
-    display: flex;
-    justify-content: flex-end;
-}
-
-// Bouton croix qui ferme la bulle
-.titleCloseBtn button {
-    background-color: transparent;
-    border: none;
-    font-size: 10px;
-    cursor: pointer;
 }
 
 // Corps de texte de la bulle

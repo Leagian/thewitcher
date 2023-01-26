@@ -23,8 +23,11 @@
 @import './screens/Toussaint.scss';
 @import './components/Characters.scss';
 @import './components/CharactersCard.scss';
+@import './components/NavMenu.scss';
+@import './components/NavItem.scss';
 
 body {
+  background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
