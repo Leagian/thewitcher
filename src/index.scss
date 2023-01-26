@@ -23,6 +23,11 @@
 @import './screens/Toussaint.scss';
 @import './components/Characters.scss';
 @import './components/CharactersCard.scss';
+$OptimusPrinceps : 'OptimusPrinceps';
+@font-face {
+  font-family: $OptimusPrinceps;
+  src: url(./fonts/OptimusPrinceps.ttf) format("truetype");
+  }
 @import './components/NavMenu.scss';
 @import './components/NavItem.scss';
 
@@ -31,10 +36,6 @@
   src: local("Morpheus.TTF") format("truetype");
   }
 
-  @font-face {
-    font-family: "Optimus Princeps";
-    src: local("OptimusPrinceps.ttf") format("truetype");
-    }
 
 body {
   background-color: black;
