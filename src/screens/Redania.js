@@ -10,6 +10,7 @@ import {
 import video from '../assets/video.mp4'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Redania = () => {
   return (
@@ -33,6 +34,9 @@ const Redania = () => {
           muted={true}
         ></video>
       </div>
+      <div className='redaniaCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='redania' />
     </>
   )
 }

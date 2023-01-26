@@ -1,6 +1,9 @@
-const Spark = props => {
+const Spark1 = props => {
   return (
-    <div className='contenairSpark' onClick={() => props.setShow(!props.show)}>
+    <div
+      className='contenairSpark'
+      onClick={() => props.setShow1(!props.show1)}
+    >
       <div className='spark spark-1'>
         <svg viewBox='0 0 124.69 124.69' width='5px' fill='#fff'>
           <path
@@ -37,4 +40,4 @@ const Spark = props => {
   )
 }
 
-export default Spark
+export default Spark1

@@ -23,3 +23,20 @@
     top: 0;
     left: 0;
 }
+.temeriaVillageLight {
+    position: absolute;
+    top: 64vh;
+    right: 48.5vw;
+    width: 4vw;
+    height: 9vh;
+    border-radius: 50%;
+    background: #FF8040;
+    animation: light 2s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes temeriaVillageLight {
+    0%   {opacity: .4; transform: translate(0px) scale(1)}
+    50%  {opacity: .3; transform: translate(0px) scale(.9)}
+    100% {opacity: .1; transform: translate(0px) scale(1)}
+}

@@ -8,6 +8,7 @@ import {
 import video from '../assets/video.mp4'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Kaedwen = () => {
   return (
@@ -29,6 +30,9 @@ const Kaedwen = () => {
           muted={true}
         ></video>
       </div>
+      <div className='kaedwenCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='kaedwen' />
     </>
   )
 }

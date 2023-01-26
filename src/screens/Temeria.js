@@ -10,6 +10,7 @@ import {
 import video from '../assets/video.mp4'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Temeria = () => {
   return (
@@ -33,6 +34,9 @@ const Temeria = () => {
           muted={true}
         ></video>
       </div>
+      <div className='temeriaVillageLight'></div>
+      <NavMenu />
+      <Characters characterRegion='temeria' />
     </>
   )
 }

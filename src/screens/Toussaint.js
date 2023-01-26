@@ -12,6 +12,7 @@ import {
 import video from '../assets/video.mp4'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Toussaint = () => {
   return (
@@ -37,6 +38,9 @@ const Toussaint = () => {
           muted={true}
         ></video>
       </div>
+      <div className='toussaintCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='toussaint' />
     </>
   )
 }

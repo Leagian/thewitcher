@@ -8,6 +8,7 @@ import {
 import video from '../assets/video.mp4'
 
 import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
 
 const Nilfgaard = () => {
   return (
@@ -29,6 +30,9 @@ const Nilfgaard = () => {
           muted={true}
         ></video>
       </div>
+      <div className='nilfgaardCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='nilfgaard' />
     </>
   )
 }

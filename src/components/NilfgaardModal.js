@@ -1,19 +1,25 @@
 import React from 'react'
 import './NilfgaardModal.scss'
+import { useState, useEffect, useRef } from 'react'
 
 function NilfgaardModal({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='nModalContainer'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Nilfgaard</h2>
         </div>
@@ -31,18 +37,23 @@ function NilfgaardModal({ closeModal }) {
 }
 
 function NilfgaardModal1({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='nModalContainer1'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Nilfgaard</h2>
         </div>
@@ -61,18 +72,23 @@ function NilfgaardModal1({ closeModal }) {
 }
 
 function NilfgaardModal2({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='nModalContainer2'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Nilfgaardian Empire</h2>
         </div>
@@ -92,18 +108,23 @@ function NilfgaardModal2({ closeModal }) {
 }
 
 function NilfgaardModal3({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='nModalContainer3'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Reputation</h2>
         </div>
