@@ -166,7 +166,7 @@ const Map = () => {
           autoPlay={true}
           controls
           loop={true}
-          muted={true}
+          muted={false}
           volume={0.2}
         />
       </div>
