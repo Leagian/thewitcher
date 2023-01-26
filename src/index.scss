@@ -18,6 +18,11 @@
 @import './screens/Toussaint.scss';
 @import './components/Characters.scss';
 @import './components/CharactersCard.scss';
+$OptimusPrinceps : 'OptimusPrinceps';
+@font-face {
+  font-family: $OptimusPrinceps;
+  src: url(./fonts/OptimusPrinceps.ttf) format("truetype");
+  }
 
 body {
   margin: 0;
@@ -32,3 +37,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

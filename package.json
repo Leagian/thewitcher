@@ -10,11 +10,12 @@
     "react": "^18.2.0",
     "react-audio-player": "^0.17.0",
     "react-dom": "^18.2.0",
-    "react-prismazoom": "^3.2.0-rc0",
     "react-modal": "^3.16.1",
+    "react-prismazoom": "^3.2.0-rc0",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
