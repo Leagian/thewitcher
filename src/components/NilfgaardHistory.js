@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import {
   NilfgaardModal,
   NilfgaardModal1,
@@ -8,65 +9,129 @@ import {
 import './NilfgaardModal.scss'
 
 function NilfgaardRegionHistory() {
-  const [openModal, setOpenModal] = useState(false)
+  const [nilfgaardHovered, setNilfgaardHovered] = useState(false)
+
+  const nilfgaardRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setNilfgaardHovered(true)
+
+    if (nilfgaardRef.current) {
+      nilfgaardRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (nilfgaardRef.current) {
+        nilfgaardRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [nilfgaardRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='nOpenModalBtn'
+        ref={nilfgaardRef}
         onClick={() => {
-          setOpenModal(true)
+          setNilfgaardHovered(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal closeModal={setOpenModal} />}
+      {nilfgaardHovered && <NilfgaardModal closeModal={setNilfgaardHovered} />}
     </div>
   )
 }
 
 function NilfgaardRegionHistory1() {
-  const [openModal, setOpenModal] = useState(false)
+  const [nilfgaardHovered, setNilfgaardHovered] = useState(false)
+
+  const nilfgaardRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setNilfgaardHovered(true)
+
+    if (nilfgaardRef.current) {
+      nilfgaardRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (nilfgaardRef.current) {
+        nilfgaardRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [nilfgaardRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='nOpenModalBtn1'
+        ref={nilfgaardRef}
         onClick={() => {
-          setOpenModal(true)
+          setNilfgaardHovered(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal1 closeModal={setOpenModal} />}
+      {nilfgaardHovered && <NilfgaardModal1 closeModal={setNilfgaardHovered} />}
     </div>
   )
 }
 
 function NilfgaardRegionHistory2() {
-  const [openModal, setOpenModal] = useState(false)
+  const [nilfgaardHovered, setNilfgaardHovered] = useState(false)
+
+  const nilfgaardRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setNilfgaardHovered(true)
+
+    if (nilfgaardRef.current) {
+      nilfgaardRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (nilfgaardRef.current) {
+        nilfgaardRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [nilfgaardRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='nOpenModalBtn2'
+        ref={nilfgaardRef}
         onClick={() => {
-          setOpenModal(true)
+          setNilfgaardHovered(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal2 closeModal={setOpenModal} />}
+      {nilfgaardHovered && <NilfgaardModal2 closeModal={setNilfgaardHovered} />}
     </div>
   )
 }
 
 function NilfgaardRegionHistory3() {
-  const [openModal, setOpenModal] = useState(false)
+  const [nilfgaardHovered, setNilfgaardHovered] = useState(false)
+
+  const nilfgaardRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseEnter = () => setNilfgaardHovered(true)
+
+    if (nilfgaardRef.current) {
+      nilfgaardRef.current.addEventListener('mouseenter', handleMouseEnter)
+    }
+    return () => {
+      if (nilfgaardRef.current) {
+        nilfgaardRef.current.removeEventListener('mouseenter', handleMouseEnter)
+      }
+    }
+  }, [nilfgaardRef])
 
   return (
     <div className='RegionHistory'>
       <button
         className='nOpenModalBtn3'
+        ref={nilfgaardRef}
         onClick={() => {
-          setOpenModal(true)
+          setNilfgaardHovered(true)
         }}
       ></button>
-      {openModal && <NilfgaardModal3 closeModal={setOpenModal} />}
+      {nilfgaardHovered && <NilfgaardModal3 closeModal={setNilfgaardHovered} />}
     </div>
   )
 }

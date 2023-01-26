@@ -1,6 +1,6 @@
 import React from 'react'
 import './Modal.scss'
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 function Modal({ closeModal }) {
   const bubbleRef = useRef(null)
@@ -20,15 +20,6 @@ function Modal({ closeModal }) {
   return (
     <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer'>
-        {/* <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div> */}
         <div className='title'>
           <h2>Cintra</h2>
         </div>
@@ -44,18 +35,23 @@ function Modal({ closeModal }) {
 }
 
 function Modal1({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer1'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Ancient Times</h2>
         </div>
@@ -72,18 +68,23 @@ function Modal1({ closeModal }) {
 }
 
 function Modal2({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer2'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Northern Wars</h2>
         </div>
@@ -103,18 +104,23 @@ function Modal2({ closeModal }) {
 }
 
 function Modal3({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer3'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Northern Wars</h2>
         </div>
@@ -135,18 +141,23 @@ function Modal3({ closeModal }) {
 }
 
 function Modal4({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer4'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Costums</h2>
         </div>

@@ -4,3 +4,38 @@
     height:100vh;
     background-size: 100% 100%;
 }
+
+
+// background video
+
+.screen-background {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+#myVideo {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.toussaintCastleLight {
+    position: absolute;
+    top: 61vh;
+    right: 15vw;
+    width: 4vw;
+    height: 9vh;
+    border-radius: 50%;
+    background: #E8E8E8;
+    animation: light 4s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes toussaintCastleLight {
+    0%   {opacity: .3; transform: translate(0px) scale(1)}
+    50%  {opacity: .2; transform: translate(0px) scale(.9)}
+    100% {opacity: .1; transform: translate(0px) scale(1)}
+}

@@ -7,6 +7,11 @@ import {
   RedaniaRegionHistory5
 } from '../components/RedaniaHistory'
 
+import video from '../assets/video.mp4'
+
+import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
+
 const Redania = () => {
   return (
     <>
@@ -17,7 +22,21 @@ const Redania = () => {
         <RedaniaRegionHistory3 />
         <RedaniaRegionHistory4 />
         <RedaniaRegionHistory5 />
+        <div className='screenScroll-down'></div>
       </div>
+      <div className='screen-background'>
+        <Characters characterRegion='redania' />
+        <video
+          id='myVideo'
+          src={video}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        ></video>
+      </div>
+      <div className='redaniaCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='redania' />
     </>
   )
 }

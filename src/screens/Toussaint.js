@@ -9,6 +9,11 @@ import {
   ToussaintRegionHistory7
 } from '../components/ToussaintHistory'
 
+import video from '../assets/video.mp4'
+
+import Characters from '../components/Characters'
+import NavMenu from '../components/NavMenu'
+
 const Toussaint = () => {
   return (
     <>
@@ -21,7 +26,21 @@ const Toussaint = () => {
         <ToussaintRegionHistory5 />
         <ToussaintRegionHistory6 />
         <ToussaintRegionHistory7 />
+        <div className='screenScroll-down'></div>
       </div>
+      <div className='screen-background'>
+        <Characters characterRegion='toussaint' />
+        <video
+          id='myVideo'
+          src={video}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        ></video>
+      </div>
+      <div className='toussaintCastleLight'></div>
+      <NavMenu />
+      <Characters characterRegion='toussaint' />
     </>
   )
 }
