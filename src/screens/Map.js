@@ -32,7 +32,6 @@ import lyriaTitle from '../assets/lyriaTitle.svg'
 import mahakamTitle from '../assets/mahakamTitle.svg'
 import jamurlakTitle from '../assets/jamurlakTitle.svg'
 import boussoleMap from '../assets/boussoleMap.svg'
-import mapRain from '../assets/mapRain.mp4'
 
 /* ZOOM CARTE */
 
@@ -160,14 +159,6 @@ const Map = () => {
 
   return (
     <>
-      {/* <video
-        id='mapRain'
-        src={mapRain}
-        autoPlay={true}
-        loop={true}
-        muted={true}
-      ></video> */}
-
       <div id='musicPlayer'>
         <AudioPlayer
           id='music'
