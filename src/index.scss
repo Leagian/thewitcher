@@ -26,6 +26,16 @@
 @import './components/NavMenu.scss';
 @import './components/NavItem.scss';
 
+@font-face {
+  font-family: "MORPHEUS";
+  src: local("Morpheus.TTF") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Optimus Princeps";
+    src: local("OptimusPrinceps.ttf") format("truetype");
+    }
+
 body {
   background-color: black;
   margin: 0;
