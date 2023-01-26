@@ -19,6 +19,16 @@
 @import './components/Characters.scss';
 @import './components/CharactersCard.scss';
 
+@font-face {
+  font-family: "MORPHEUS";
+  src: local("Morpheus.TTF") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Optimus Princeps";
+    src: local("OptimusPrinceps.ttf") format("truetype");
+    }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

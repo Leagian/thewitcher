@@ -1,3 +1,8 @@
+/* #################################################################################################### */
+/*                                           STYLE MAP & BOUSSOLE                                       */
+/* #################################################################################################### */
+
+
 .map-image {
   background-image: url("../assets/Witcherx4.jpg");
   position: relative;
@@ -5,9 +10,79 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  // transform: perspective(100px) rotateX(0.5deg);
+  
 }
 
+#boussoleMap {
+  position: absolute;
+  top: 6.6%;
+  left: 6.9%;
+  width: 9.5%;
+  opacity: 95%;
+  animation: pulse 2s ease-in-out infinite;
+  filter : drop-shadow(0px 0px 10px #ffffffe4);
+}
 
+@keyframes pulse {
+  0% {
+    filter : drop-shadow(0px 1px 5px #fffffff9);
+  }
+  50% {
+    filter : drop-shadow(0px -1px 15px #ffffff77);
+  }
+  100% {
+    filter : drop-shadow(0px 1px 5px #59edfde2);
+  }
+  50% {
+    filter : drop-shadow(0px -1px 20px #ffffff7e);
+}
+  0% {
+    filter : drop-shadow(0px 1px 5px #fffffffc);
+}
+}
+
+#musicPlayer {
+  position: absolute;
+  top: 92%;
+  left: 83%;
+  z-index: 2000;
+  opacity: 0%;
+  transition: 1.5s;
+
+  &:hover {
+    opacity: 100%;
+}
+}
+
+#mapRain {
+  z-index: 5000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-Fit: cover;
+}
+
+.loading-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f3f3f3;
+  animation: loading-animation 1s ease-in-out infinite;
+}
+
+@keyframes loading-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* #################################################################################################### */
 /*                                            STYLE VILLES                                              */
@@ -19,7 +94,7 @@
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 3.5px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #novigrad-town,
@@ -29,54 +104,54 @@
 #beauclair-town,
 #vizima-town {
   position: absolute;
-  padding: 10px 10px;
+  padding: 8px 8px;
   background-color: #ffffffda;
   border: none;
   border-radius: 60px;
-  filter: drop-shadow(0px 0px 5px #3ea7db) drop-shadow(0.5px 0 5px #0022ff) contrast(2) brightness(2) blur(2px);
+  filter: drop-shadow(0px 0px 5px #000000) drop-shadow(0.5px 0 1px #009dff9e) contrast(2) brightness(2) blur(1px);
   transition: .8s;
+  font-family: "MORPHEUS";
 
   &:hover {
-    color: black;
-    background-color: #00000000;
-    filter: drop-shadow(0 0 10px #014adb) contrast(2) brightness(2) blur(0.5px);
-  }
+    background-color: #ff000000;
+    filter: drop-shadow(0 0 10px #3a0c01) drop-shadow(0.5px 0 1px #004671) contrast(2) brightness(2);
+}
 }
 
 #novigrad-town {
-  top: 23vh;
-  left: 96.5vh;
+  top: 22%;
+  left: 47.2%;
   z-index: 1000; 
 }
 
 #kaermorhen-town {
-  top: 12.5vh;
-  left: 128vh;
+  top: 11%;
+  left: 62.5%;
 }
 
 #cintra-town {
-  top: 41.5vh;
-  left: 84.5vh;
+  top: 40%;
+  left: 41%;
 }
 
 #nilfgaard-town {
-  top: 94vh;
-  left: 68.5vh;
+  top: 92%;
+  left: 33.5%;
 }
 
 #beauclair-town {
-  top: 49.6vh;
-  left: 121.5vh;
+  top: 50%;
+  left: 59.5%;
 }
 
 #vizima-town {
-  top: 29.9vh;
-  left: 97.5vh;
+  top: 29%;
+  left: 47.5%;
 }
 
 
 /* #################################################################################################### */
-/*                                            STYLE REGIONS                                             */
+/*                                          STYLE REGIONS ACTIVES                                       */
 /* #################################################################################################### */
 
 
@@ -86,65 +161,212 @@
   font-weight: 800;
 }
 
-.nilfgaard-region {
-  // font-size: 30px;
-  // position: absolute;
-  // top: 89vh;
-  // left:85vh;
-  // letter-spacing: 0px;
-  // letter-spacing: 5px;
-  // rotate: 0deg;
+#nilfgaard-region,
+#cintra-region,
+#toussaint-region,
+#kaedwen-region,
+#redania-region,
+#temeria-region {
+  position: absolute;
   z-index: 1000;
-  position: absolute;
-  top: 88.5vh;
-  left: 73vh;
-  width: 18.8%;
-  rotate: -1deg;
-  filter: drop-shadow(0px 0px 5px #3ea7db) drop-shadow(0.5px 0 5px #0022ff) contrast(2) brightness(2);
   transition: .8s;
+  opacity: 0%;
+
+  &:hover {
+    opacity: 100%;
+    filter: drop-shadow(0 5px 5px #1c82ff) drop-shadow(0.5px 0 18px #1100ff) contrast(2) brightness(2);
+  }
 }
 
-.toussaint-region {
-  font-size: 30px;
-  position: absolute;
-  top: 45vh;
-  left:115vh;
-  letter-spacing: 0px;
+#nilfgaard-region {
+  top: 88.1%;
+  left: 35.7%;
+  width: 18.8%;
   rotate: 0deg;
 }
 
-.cintra-region {
-  font-size: 30px;
+#cintra-region {
+  top: 43.9%;
+  left: 41.4%;
+  width: 4.5%;
+}
+
+#toussaint-region { 
+  top: 46.2%;
+  left: 59%;
+  width: 4.2%;
+  rotate: -2deg;
+}
+
+#kaedwen-region {
+  top: 16.2%;
+  left: 56.5%;
+  width: 4.5%;
+  rotate: -2deg;
+}
+
+#redania-region {
+  top: 19.5%;
+  left: 51.4%;
+  width: 4.5%;
+  rotate: 4deg;
+}
+
+#temeria-region {
+  top: 28.1%;
+  left: 50.6%;
+  width: 5.4%;
+  rotate: 4deg;
+}
+
+
+
+/* #################################################################################################### */
+/*                                        STYLE REGIONS INACTIVES                                       */
+/* #################################################################################################### */
+
+
+#sodden-region,
+#nazair-region,
+#ebbing-region,
+#mettina-region,
+#vicovaro-region,
+#gemera-region,
+#verden-region,
+#brokilon-region,
+#skellige-region,
+#cidaris-region,
+#kovir-region,
+#aedrin-region,
+#etolia-region,
+#brugge-region,
+#lyria-region,
+#mahakam-region,
+#jamurlak-region {
   position: absolute;
-  top: 43vh;
-  left:85vh;
-  letter-spacing: 0px;
+  z-index: 1000;
+  transition: .8s;
+  opacity: 0%;
+
+  &:hover {
+    opacity: 100%;
+    filter: drop-shadow(0 5px 10px #2a2a2a) drop-shadow(0.5px 0 5px #717171) contrast(5) brightness(2);
+  }
+}
+
+#sodden-region {
+  top: 44.2%;
+  left: 48%;
+  width: 4.7%;
+}
+
+#nazair-region {
+  top: 51.2%;
+  left: 43.2%;
+  width: 5.5%;
+  rotate: 3deg;
+}
+
+#ebbing-region {
+  top: 73.3%;
+  left: 39.8%;
+  width: 10%;
+  rotate: -4deg;
+}
+
+#mettina-region {
+  top: 59.9%;
+  left: 39.5%;
+  width: 11.3%;
+  rotate: 3.5deg;
+}
+
+#vicovaro-region {
+  top: 89.5%;
+  left: 55.9%;
+  width: 5.5%;
+  rotate: 3.5deg;
+}
+
+#gemera-region {
+  top: 83.9%;
+  left: 35.8%;
+  width: 10.6%;
   rotate: 0deg;
 }
 
-.kaedwen-region {
-  font-size: 30px;
-  position: absolute;
-  top: 18vh;
-  left:112vh;
-  letter-spacing: 0px;
-  rotate: 25deg;
+#skellige-region {
+  top: 32.2%;
+  left: 32.2%;
+  width: 7%;
 }
 
-.redania-region {
-  font-size: 30px;
-  position: absolute;
-  top: 21vh;
-  left:102vh;
-  letter-spacing: 0px;
-  rotate: -25deg;
+#cidaris-region {
+  top: 28.2%;
+  left: 39.7%;
+  width: 2.9%;
 }
 
-.temeria-region {
-  font-size: 30px;
-  position: absolute;
-  top: 28vh;
-  left:102vh;
-  letter-spacing: 0px;
-  rotate: -22deg;
+#brokilon-region {
+  top: 32.3%;
+  left: 40.3%;
+  width: 6%;
+  rotate: 1deg;
 }
+
+#aedrin-region {
+  top: 30.4%;
+  left: 56.4%;
+  width: 2.9%;
+  rotate: -2deg;
+}
+
+#verden-region {
+  top: 35.1%;
+  left: 40.2%;
+  width: 2.8%;
+  rotate: -2deg;
+}
+
+#kovir-region {
+  top: 7.6%;
+  left: 44.6%;
+  width: 4.9%;
+  rotate: 1deg;
+}
+
+#etolia-region {
+  top: 86.8%;
+  left: 46.5%;
+  width: 6.1%;
+  rotate: 2deg;
+}
+
+#brugge-region {
+  top: 35.4%;
+  left: 44.7%;
+  width: 2.3%;
+  rotate: 2deg;
+}
+
+#lyria-region {
+  top: 37.3%;
+  left: 54.6%;
+  width: 2.9%;
+  rotate: 2deg;
+}
+
+#mahakam-region {
+  top: 32.2%;
+  left: 52.5%;
+  width: 3.6%;
+  rotate: 4deg;
+}
+
+#jamurlak-region {
+  top: 11.1%;
+  left: 52.2%;
+  width: 4.4%;
+  rotate: -1deg;
+}
+

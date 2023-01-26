@@ -1,11 +1,38 @@
 import React, { useCallback, useRef, useState, useEffect } from 'react'
-
 import PrismaZoom from 'react-prismazoom'
 import { Link } from 'react-router-dom'
+import AudioPlayer from 'react-audio-player'
+
+import '../fonts/Morpheus.TTF'
+import '../fonts/OptimusPrinceps.ttf'
+import mapAmbient_ from '../assets/mapAmbient2.wav'
 
 import witcherMapt9 from '../assets/WitcherMapX4T9.jpg'
 import nilfgaardtitle from '../assets/nilfgaardtitle.svg'
-// import fog from '../assets/fog.mp4'
+import cintraTitle from '../assets/cintraTitle.svg'
+import toussaintTitle from '../assets/toussaintTitle.svg'
+import kaedwenTitle from '../assets/kaedwenTitle.svg'
+import redaniaTitle from '../assets/redaniaTitle.svg'
+import temeriaTitle from '../assets/temeriaTitle.svg'
+import soddenTitle from '../assets/soddenTitle.svg'
+import nazairTitle from '../assets/nazairTitle.svg'
+import ebbingTitle from '../assets/ebbingTitle.svg'
+import mettinaTitle from '../assets/mettinaTitle.svg'
+import vicovaroTitle from '../assets/vicovaroTitle.svg'
+import gemeraTitle from '../assets/gemeraTitle.svg'
+import skelligeTitle from '../assets/skelligeTitle.svg'
+import cidarisTitle from '../assets/cidarisTitle.svg'
+import brokilonTitle from '../assets/brokilonTitle.svg'
+import aedrinTitle from '../assets/aedrinTitle.svg'
+import verdenTitle from '../assets/verdenTitle.svg'
+import kovirTitle from '../assets/kovirTitle.svg'
+import etoliaTitle from '../assets/etoliaTitle.svg'
+import bruggeTitle from '../assets/bruggeTitle.svg'
+import lyriaTitle from '../assets/lyriaTitle.svg'
+import mahakamTitle from '../assets/mahakamTitle.svg'
+import jamurlakTitle from '../assets/jamurlakTitle.svg'
+import boussoleMap from '../assets/boussoleMap.svg'
+import mapRain from '../assets/mapRain.mp4'
 
 /* ZOOM CARTE */
 
@@ -131,40 +158,28 @@ const Map = () => {
     }
   }, [vizimaRef])
 
-  /* HOVER REGIONS */
-
-  // const [nilfgaardtitleHovered, setNilfgaardtitleHovered] = useState(false)
-  // const nilfgaardtitleRef = useRef(null)
-
-  // useEffect(() => {
-  //   const handleMouseEnter = () => setNilfgaardtitleHovered(true)
-  //   const handleMouseLeave = () => setNilfgaardtitleHovered(false)
-  //   if (nilfgaardtitleRef.current) {
-  //     nilfgaardtitleRef.current.addEventListener('mouseenter', handleMouseEnter)
-  //     nilfgaardtitleRef.current.addEventListener('mouseleave', handleMouseLeave)
-  //   }
-  //   return () => {
-  //     if (nilfgaardtitleRef.current) {
-  //       nilfgaardtitleRef.current.removeEventListener(
-  //         'mouseenter',
-  //         handleMouseEnter
-  //       )
-  //       nilfgaardtitleRef.current.removeEventListener(
-  //         'mouseleave',
-  //         handleMouseLeave
-  //       )
-  //     }
-  //   }
-  // }, [nilfgaardtitleRef])
-
-  // <div className='nilfgaard-region' ref={nilfgaardtitleRef}>
-  //               <Link to={'/nilfgaard'}>
-  //               {nilfgaardtitleHovered && <Link to={'/nilfgaard'}><img src={nilfgaardtitle} />
-  //               </Link>}
-  //             </div>
-
   return (
     <>
+      {/* <video
+        id='mapRain'
+        src={mapRain}
+        autoPlay={true}
+        loop={true}
+        muted={true}
+      ></video> */}
+
+      <div id='musicPlayer'>
+        <AudioPlayer
+          id='music'
+          src={mapAmbient_}
+          autoPlay={true}
+          controls
+          loop={true}
+          muted={true}
+          volume={0.2}
+        />
+      </div>
+
       <div className='map-global'>
         <PrismaZoom
           className='map-zoom'
@@ -175,22 +190,6 @@ const Map = () => {
             prismaZoom.current = node
           }}
         >
-          {/* <div>
-            <video
-              src={fog}
-              style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                zIndex: '2000'
-              }}
-              autoPlay={true}
-              loop={true}
-              muted={true}
-            ></video>
-          </div> */}
-
           <img src={witcherMapt9} className='map-image' />
           <div className='link-town'>
             <div className='towns'>
@@ -220,25 +219,89 @@ const Map = () => {
           </div>
           <div className='link-region'>
             <div className='regions'>
-              <div className='kaedwen-region'>
-                <Link to={'/kaedwen'}>Kaedwen</Link>
-              </div>
-              <div className='cintra-region'>
-                <Link to={'/cintra'}>Cintra</Link>
-              </div>
-              <div className='redania-region'>
-                <Link to={'/redania'}>Redania</Link>
-              </div>
-              <div className='nilfgaard-region'>
+              <a id='kaedwen-region'>
+                <Link to={'/kaedwen'}>
+                  <img src={kaedwenTitle} />
+                </Link>
+              </a>
+              <a id='cintra-region'>
+                <Link to={'/cintra'}>
+                  <img src={cintraTitle} />
+                </Link>
+              </a>
+              <a id='redania-region'>
+                <Link to={'/redania'}>
+                  <img src={redaniaTitle} />
+                </Link>
+              </a>
+              <a id='nilfgaard-region'>
                 <Link to={'/nilfgaard'}>
                   <img src={nilfgaardtitle} />
                 </Link>
+              </a>
+              <a id='toussaint-region'>
+                <Link to={'/toussaint'}>
+                  <img src={toussaintTitle} />
+                </Link>
+              </a>
+              <a id='temeria-region'>
+                <Link to={'/temeria'}>
+                  <img src={temeriaTitle} />
+                </Link>
+              </a>
+              <div id='sodden-region'>
+                <img src={soddenTitle} />
               </div>
-              <div className='toussaint-region'>
-                <Link to={'/toussaint'}>Toussaint</Link>
+              <div id='nazair-region'>
+                <img src={nazairTitle} />
               </div>
-              <div className='temeria-region'>
-                <Link to={'/temeria'}>Temeria</Link>
+              <div id='ebbing-region'>
+                <img src={ebbingTitle} />
+              </div>
+              <div id='mettina-region'>
+                <img src={mettinaTitle} />
+              </div>
+              <div id='vicovaro-region'>
+                <img src={vicovaroTitle} />
+              </div>
+              <div id='gemera-region'>
+                <img src={gemeraTitle} />
+              </div>
+              <div id='skellige-region'>
+                <img src={skelligeTitle} />
+              </div>
+              <div id='cidaris-region'>
+                <img src={cidarisTitle} />
+              </div>
+              <div id='brokilon-region'>
+                <img src={brokilonTitle} />
+              </div>
+              <div id='aedrin-region'>
+                <img src={aedrinTitle} />
+              </div>
+              <div id='verden-region'>
+                <img src={verdenTitle} />
+              </div>
+              <div id='kovir-region'>
+                <img src={kovirTitle} />
+              </div>
+              <div id='etolia-region'>
+                <img src={etoliaTitle} />
+              </div>
+              <div id='brugge-region'>
+                <img src={bruggeTitle} />
+              </div>
+              <div id='lyria-region'>
+                <img src={lyriaTitle} />
+              </div>
+              <div id='mahakam-region'>
+                <img src={mahakamTitle} />
+              </div>
+              <div id='jamurlak-region'>
+                <img src={jamurlakTitle} />
+              </div>
+              <div id='boussoleMap'>
+                <img src={boussoleMap} />
               </div>
             </div>
           </div>
