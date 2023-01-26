@@ -1,4 +1,5 @@
-  .imglogo {
+
+ .imglogo {
    width: 30%;
    max-width: 50%;
    z-index: 1000;
@@ -200,4 +201,206 @@
   * {
     transition: all 0.25s ease-out;
   }
+  
+
+  // ------------------------ CSS BRAISE --------------------------
+
+  .braises {
+    position: relative;
+    top: -40px;
+    z-index: 1001;
+    
+  
+
+
+    @function random_range($min, $max) {
+      $rand: random();
+      $random_range: $min + floor($rand * (($max - $min) + 1));
+      @return $random_range;
+    }
+
+    .braise {
+      z-index: 1002;
+      $total: 200;
+      position: absolute;
+      width: 8px;
+      height: 25px;
+      background: rgb(251, 170, 63);
+      background: radial-gradient(circle, rgba(251, 170, 63, 1) 15%, rgba(167,0,34,0.835171568627451) 55%);
+      border-radius: 50%;
+      rotate : 0deg;
+    
+      @for $i from 1 through $total {
+        $random-x: random(1000000) * 0.0001vw;
+        $random-offset: random_range(-100000, 100000) * 0.0001vw;
+        $random-x-end: $random-x + $random-offset;
+        $random-x-end-yoyo: $random-x + ($random-offset / 1);
+        $random-yoyo-time: random_range(190000, 80000) / 100000;
+        $random-yoyo-y: $random-yoyo-time * -100vh;
+        $random-scale: random(10000) * 0.0001;
+        $random-scale-end: random(10000) * 0.0001;
+        $fall-duration: random_range(10, 30) * 0.4s;
+        $fall-delay: random(45) * -1s;
+    
+        &:nth-child(#{$i}) {
+          opacity: random(10000) * 0.0001;
+          transform: translate($random-x, -10px) scale($random-scale);
+          animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+        }
+    
+        @keyframes fall-#{$i} {
+          #{percentage($random-yoyo-time)} {
+            transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+          }
+    
+          to {
+            transform: translate($random-x-end-yoyo, -100vh) scale($random-scale);
+          }
+        }
+      }
+    }
+
+
+    // texte home page
+
+
+
+
+  }
+  
+  .animation-paragraph {
+    animation: fadeIn 2s ease-in;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .animation-text {
+    position: relative;
+  }
+ 
+  .text {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: animateText 10s linear infinite;
+    position: absolute;
+    top: -200px;
+    z-index: 1004;
+    color: rgba(255, 255, 255, 0.496);
+    font-size: 60px;
+    font-family: "OptimusPrinceps";
+    text-shadow: 3px 3px 3px #000000;
+    text-align: center;
+  }
+  
+  .text {
+    opacity: 0;
+    animation: fadeInOut 11.3s ease-in-out;
+    animation-delay: 0,8s;
+  }
+
+  .text1 {
+    position: absolute;
+    top: -200px;
+    z-index: 1004;
+    color: rgba(255, 255, 255, 0.496);
+    font-size: 60px;
+    text-align: center;
+    font-family: "OptimusPrinceps";
+    text-shadow: 3px 3px 3px #000000;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: animateText 6s linear infinite;
+  }
+  
+  .text1 {
+    opacity: 0;
+    animation: fadeInOut 5.6s ease-in-out;
+    animation-delay: 10s;
+  }
+  .text2 {
+    position: absolute;
+    top: -200px;
+    z-index: 1004;
+    color: rgba(255, 255, 255, 0.496);
+    font-size: 60px;
+    text-align: center;
+    font-family: "OptimusPrinceps";
+    text-shadow: 3px 3px 3px #000000;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: animateText 11s linear infinite;
+  }
+  
+  .text2 {
+    opacity: 0;
+    animation: fadeInOut 5s ease-in-out;
+    animation-delay: 15s;
+  }
+
+  .text3 {
+    position: absolute;
+    top: -200px;
+    z-index: 1004;
+    color: rgba(255, 255, 255, 0.496);
+    font-size: 60px;
+    font-family: "OptimusPrinceps";
+    text-shadow: 3px 3px 3px #000000;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: animateText 13s linear infinite;
+  }
+  
+  .text3 {
+    opacity: 0;
+    animation: fadeInOut 10s ease-in-out;
+    animation-delay: 19s;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .audio {
+    position: relative;
+    top: 0px;
+
+    .react-audio-player .play-pause-btn {
+
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+  }
+
+ 
   

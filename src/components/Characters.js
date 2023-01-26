@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 import CharactersCard from './CharactersCard'
@@ -8,9 +8,9 @@ const Characters = props => {
   // const { regionId } = useParams()
 
   useEffect(() => {
-    fetch('http://localhost:4242/')
-      .then(res => res.json())
-      .then(res => console.log(res) || setCharactersInfos(res))
+    axios
+      .get('http://localhost:4242/')
+      .then(res => setCharactersInfos(res.data))
   }, [])
 
   return (
