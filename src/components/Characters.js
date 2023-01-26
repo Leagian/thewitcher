@@ -1,16 +1,16 @@
-import { useParams } from 'react-router-dom'
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 import CharactersCard from './CharactersCard'
 
-const Characters = () => {
+const Characters = props => {
   const [charactersInfo, setCharactersInfos] = useState([])
-  const { regionId } = useParams()
+  // const { regionId } = useParams()
 
   useEffect(() => {
-    fetch('http://localhost:4242/')
-      .then(res => res.json())
-      .then(res => console.log(res) || setCharactersInfos(res))
+    axios
+      .get('http://localhost:4242/')
+      .then(res => setCharactersInfos(res.data))
   }, [])
 
   return (
@@ -18,7 +18,8 @@ const Characters = () => {
       <div className='charac-global'>
         {charactersInfo
           .filter(
-            CharacterFilterRegion => CharacterFilterRegion.region === regionId
+            CharacterFilterRegion =>
+              CharacterFilterRegion.region === props.characterRegion
           )
 
           .map(CharacterMap => (

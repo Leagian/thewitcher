@@ -1,19 +1,25 @@
 import React from 'react'
 import './TemeriaModal.scss'
+import { useEffect, useRef } from 'react'
 
 function TemeriaModal({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Temeria</h2>
         </div>
@@ -34,18 +40,23 @@ function TemeriaModal({ closeModal }) {
 }
 
 function TemeriaModal1({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer1'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Foltests reign</h2>
         </div>
@@ -64,18 +75,23 @@ function TemeriaModal1({ closeModal }) {
 }
 
 function TemeriaModal2({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer2'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>History</h2>
         </div>
@@ -100,18 +116,23 @@ function TemeriaModal2({ closeModal }) {
 }
 
 function TemeriaModal3({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer3'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Society</h2>
         </div>
@@ -129,18 +150,23 @@ function TemeriaModal3({ closeModal }) {
 }
 
 function TemeriaModal4({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer4'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Religion</h2>
         </div>
@@ -158,18 +184,23 @@ function TemeriaModal4({ closeModal }) {
 }
 
 function TemeriaModal5({ closeModal }) {
+  const bubbleRef = useRef(null)
+
+  useEffect(() => {
+    const handleMouseBubble = () => closeModal()
+    if (bubbleRef.current && closeModal) {
+      bubbleRef.current.addEventListener('mouseleave', handleMouseBubble)
+    }
+    return () => {
+      if (bubbleRef.current) {
+        bubbleRef.current.removeEventListener('mouseleave', handleMouseBubble)
+      }
+    }
+  }, [bubbleRef, closeModal])
+
   return (
-    <div className='modalBackground'>
+    <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer5'>
-        <div className='titleCloseBtn'>
-          <button
-            onClick={() => {
-              closeModal(false)
-            }}
-          >
-            X
-          </button>
-        </div>
         <div className='title'>
           <h2>Economy and trade</h2>
         </div>
