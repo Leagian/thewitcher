@@ -1,5 +1,3 @@
-import AlchemyMenu from './components/AlchemyMenu'
-
 import { Routes, Route } from 'react-router-dom'
 
 import CintraTown from './screens/CintraTown'
@@ -18,19 +16,38 @@ import Kaedwen from './screens/Kaedwen'
 import Toussaint from './screens/Toussaint'
 
 import Characters from './components/Characters'
+import { useState } from 'react'
+import AlchemyFeature from './components/AlchemyFeature'
 
 function App() {
+  const [showAlchemy, setShowAlchemy] = useState(false)
   return (
     <div className='App'>
       <Routes>
-        <Route path='/alchemy' element={<AlchemyMenu />} />
+        <Route
+          path='/alchemy'
+          element={
+            <AlchemyFeature
+              showAlchemy={showAlchemy}
+              setShowAlchemy={setShowAlchemy}
+            />
+          }
+        />
         <Route path='/' element={<Home />} />
         <Route path='map' element={<Map />} />
         <Route path='cintratown' element={<CintraTown />} />
         <Route path='nilfgaardtown' element={<NilfgaardTown />} />
         <Route path='kaermorhen' element={<KaerMorhen />} />
         <Route path='beauclair' element={<Beauclair />} />
-        <Route path='novigrad' element={<Novigrad />} />
+        <Route
+          path='novigrad'
+          element={
+            <Novigrad
+              showAlchemy={showAlchemy}
+              setShowAlchemy={setShowAlchemy}
+            />
+          }
+        />
         <Route path='vizima' element={<Vizima />} />
         <Route path='cintra' element={<Cintra />} />
         <Route path='nilfgaard' element={<Nilfgaard />} />

@@ -1,0 +1,16 @@
+
+.blur-filter {
+    position: relative;
+    min-height: 100vh;
+    width: auto;
+    z-index: 1250;
+    backdrop-filter: blur(7px);
+}
+.alchemy-container {
+    z-index: 1500;
+    width: 80%;
+    height: 85vh;
+    position:absolute;
+    transform: translate(12.5%, -108.5%);
+    
+}

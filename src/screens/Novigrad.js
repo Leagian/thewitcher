@@ -4,7 +4,9 @@ import NavMenu from '../components/NavMenu'
 import Spark from '../components/Spark'
 import Spark1 from '../components/Spark1'
 
-const Novigrad = () => {
+import AlchemyFeature from '../components/AlchemyFeature'
+
+const Novigrad = props => {
   const [show, setShow] = useState(true)
   const [show1, setShow1] = useState(true)
   return (
@@ -15,7 +17,16 @@ const Novigrad = () => {
       <div className='sparkImageNovi2'>
         {show1 ? <Spark1 show1={show1} setShow1={setShow1} id={2} /> : null}
       </div>
-      <NavMenu />
+      <NavMenu
+        showAlchemy={props.showAlchemy}
+        setShowAlchemy={props.setShowAlchemy}
+      />
+      {props.showAlchemy && (
+        <AlchemyFeature
+          showAlchemy={props.showAlchemy}
+          setShowAlchemy={props.setShowAlchemy}
+        />
+      )}
     </div>
   )
 }

@@ -36,8 +36,10 @@ const Potions = props => {
         )}
         {!selectedPotion && buttonClicked && (
           <div className='invalide-mix'>
-            This mix doesn't make anything. <br /> Try looking at the
-            ingredients description to get a clue of the possible mixes.
+            <p>
+              This mix doesn't make anything. <br /> Try looking at the
+              ingredients description to get a clue of the possible mixes.
+            </p>
           </div>
         )}
       </div>

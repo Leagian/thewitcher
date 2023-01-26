@@ -3,18 +3,18 @@
     display: flex;
     justify-content: center;
     color: burlywood;
-    margin-left:5vh ;
-    margin-top: 5vh;
+    padding-left:5vh ;
+    padding-top: 5vh;
 }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 100%;
     width: 100%;
     row-gap: 2vh;
-    margin-left: 6vh;
-    margin-top: 4vh;
+    padding-left: 6vh;
+    padding-top: 4vh;
 
   }
   
@@ -27,9 +27,10 @@
     border: 2px solid rgb(91, 8, 8);
   }
 .ingredient-image {
-  margin-top: 1vh;
+  padding-top: 1vh;
   width: 60%;
   height: 80%;
+  opacity: 0.4;
 }
 .selected {
   border: 2px solid blue;
@@ -48,6 +49,8 @@
   opacity: 0.75;
   border-radius: 5%;
 }
-  
+.activated {
+  opacity: 1;
+}
  
   
