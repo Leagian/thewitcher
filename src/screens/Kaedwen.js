@@ -30,9 +30,10 @@ const Kaedwen = () => {
           muted={true}
         ></video>
       </div>
-      <div className='kaedwenCastleLight'></div>
+      <div className='test'>
+        <div className='kaedwenCastleLight'></div>
+      </div>
       <NavMenu />
-      <Characters characterRegion='kaedwen' />
     </>
   )
 }

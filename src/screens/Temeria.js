@@ -36,7 +36,6 @@ const Temeria = () => {
       </div>
       <div className='temeriaVillageLight'></div>
       <NavMenu />
-      <Characters characterRegion='temeria' />
     </>
   )
 }

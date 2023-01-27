@@ -32,7 +32,6 @@ const Nilfgaard = () => {
       </div>
       <div className='nilfgaardCastleLight'></div>
       <NavMenu />
-      <Characters characterRegion='nilfgaard' />
     </>
   )
 }

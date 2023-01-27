@@ -40,7 +40,6 @@ const Toussaint = () => {
       </div>
       <div className='toussaintCastleLight'></div>
       <NavMenu />
-      <Characters characterRegion='toussaint' />
     </>
   )
 }

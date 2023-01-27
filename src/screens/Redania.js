@@ -36,7 +36,6 @@ const Redania = () => {
       </div>
       <div className='redaniaCastleLight'></div>
       <NavMenu />
-      <Characters characterRegion='redania' />
     </>
   )
 }

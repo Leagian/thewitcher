@@ -36,7 +36,6 @@ const Cintra = () => {
       </div>
       <div className='cintraCastleLight'></div>
       <NavMenu />
-      <Characters characterRegion='cintra' />
     </>
   )
 }
