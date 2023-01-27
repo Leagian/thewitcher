@@ -3,7 +3,7 @@ import Inventorygrid from './Inventorygrid'
 import Potions from './Potions'
 import { useState, useEffect } from 'react'
 
-const AlchemyMenu = () => {
+const AlchemyMenu = props => {
   const [potions, setPotions] = useState()
   const [ingredients, setIngredients] = useState()
   const [selectedIngredients, setSelectedIngredients] = useState([])
@@ -25,15 +25,18 @@ const AlchemyMenu = () => {
   }, [])
 
   const handleClick = ingredient => {
-    const index = selectedIngredients.indexOf(ingredient)
-    if (index === -1) {
-      if (selectedIngredients.length < 2) {
-        setSelectedIngredients([...selectedIngredients, ingredient])
+    const keyExists = localStorage.getItem(`spark_${ingredient.id}`) === 'true'
+    if (keyExists) {
+      const index = selectedIngredients.indexOf(ingredient)
+      if (index === -1) {
+        if (selectedIngredients.length < 2) {
+          setSelectedIngredients([...selectedIngredients, ingredient])
+        }
+      } else {
+        const newSelectedIngredients = [...selectedIngredients]
+        newSelectedIngredients.splice(index, 1)
+        setSelectedIngredients(newSelectedIngredients)
       }
-    } else {
-      const newSelectedIngredients = [...selectedIngredients]
-      newSelectedIngredients.splice(index, 1)
-      setSelectedIngredients(newSelectedIngredients)
     }
   }
 
@@ -57,7 +60,10 @@ const AlchemyMenu = () => {
             />
           </div>
           <div className='child3'>
-            <Bestiary />
+            <Bestiary
+              showAlchemy={props.showAlchemy}
+              setShowAlchemy={props.setShowAlchemy}
+            />
           </div>
         </div>
       </div>
