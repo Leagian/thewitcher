@@ -11,7 +11,7 @@ const Vizima = props => {
   return (
     <div className='Vizima'>
       <div className='sparkImageKaer1'>
-        {show ? <Spark show1={show} setShow={setShow} id={9} /> : null}
+        {show ? <Spark show={show} setShow={setShow} id={9} /> : null}
       </div>
       <div className='sparkImageKaer2'>
         {show1 ? <Spark1 show1={show1} setShow1={setShow1} id={10} /> : null}
