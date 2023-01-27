@@ -8,10 +8,6 @@ const AlchemyMenu = props => {
   const [ingredients, setIngredients] = useState()
   const [selectedIngredients, setSelectedIngredients] = useState([])
 
-  {
-    console.log(props.setShowAlchemy)
-  }
-
   useEffect(() => {
     fetch('http://localhost:4242/potions').then(res =>
       res.json().then(potionsData => {
