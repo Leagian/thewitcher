@@ -30,9 +30,18 @@ const Inventorygrid = props => {
                 className={`ingredient-image ${keyExists ? 'activated' : ''}`}
               />
               {displayTooltip && hoveringElement === ingredient && (
-                <div className='tooltip'>
-                  <p>Name: {ingredient.name}</p>
-                  <p>Rarity: {ingredient.rarity}</p>
+                <div className='tooltip-activated'>
+                  {keyExists ? (
+                    <>
+                      <p>Name: {ingredient.name}</p>
+                      <p>Rarity: {ingredient.rarity}</p>
+                    </>
+                  ) : (
+                    <p>
+                      Try looking around in the city of {ingredient.location}{' '}
+                      you may find some...
+                    </p>
+                  )}
                 </div>
               )}
             </div>
