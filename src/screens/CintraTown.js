@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 import FlowerImage from '../components/FlowerImage'
 import Spark1 from '../components/Spark1'
 import NavMenu from '../components/NavMenu'
+import AlchemyFeature from '../components/AlchemyFeature'
 
-const CintraTown = () => {
+const CintraTown = props => {
   const [show, setShow] = useState(true)
   const [show1, setShow1] = useState(true)
 
@@ -29,7 +30,16 @@ const CintraTown = () => {
         {show1 ? <Spark1 show1={show1} setShow1={setShow1} /> : null}
       </div>
       <div className='light'></div>
-      <NavMenu />
+      <NavMenu
+        showAlchemy={props.showAlchemy}
+        setShowAlchemy={props.setShowAlchemy}
+      />
+      {props.showAlchemy && (
+        <AlchemyFeature
+          showAlchemy={props.showAlchemy}
+          setShowAlchemy={props.setShowAlchemy}
+        />
+      )}
     </div>
   )
 }

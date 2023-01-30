@@ -1,17 +1,30 @@
+
+.closing-button {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    font-size: 40px;
+    margin: 0;
+    transform: translate(0% , 10%);
+}
+.closing-button:hover {
+    color: white;
+}
 .titlebestiary {
     font-size: 25px;
     display: flex;
     justify-content: center;
     color: burlywood;
-    margin-left:3vh ;
-    margin-top: 5vh;
+    padding-left:3vh ;
+    margin-top: 1.2vh;
 }
 .scroll-container {
-    margin-left: 9vh;
+    padding-top: 2vh;
+    padding-left: 9vh;
     width: 80%;
 }
 .scroll-image {
+    height: 60vh;
     border-radius: 10px;
     width: 85%;
-    height: 60vh;
 }

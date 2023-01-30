@@ -3,4 +3,41 @@
     background-repeat: no-repeat;
     height:100vh;
     background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+// background video
+
+.screen-background {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+#myVideo {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nilfgaardCastleLight {
+    position: absolute;
+    top: 59vh;
+    right: 40.5vw;
+    width: 7vw;
+    height: 12vh;
+    border-radius: 50%;
+    background: red;
+    animation: light 2s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes nilfgaardCastleLight {
+    0%   {opacity: .4; transform: translate(0px) scale(1)}
+    50%  {opacity: .3; transform: translate(0px) scale(.9)}
+    100% {opacity: .1; transform: translate(0px) scale(1)}
 }

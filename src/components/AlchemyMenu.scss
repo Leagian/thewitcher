@@ -1,31 +1,31 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 .menu {
     background-size: 100% 100%;
     background-image: url('../assets/wood\ board.png');
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 2px;
     
   }
+
+.componentsbox {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
 .titlemenu {
     font-size: 30px;
     padding-top: 2vh;
     display: flex;
     justify-content: center;
     color: burlywood;
-}
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(24, 23, 23);
-}
-.componentsbox {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-   
 }
 
 .child1 {

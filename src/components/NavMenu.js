@@ -4,7 +4,7 @@ import NavItem from './NavItem'
 
 import Logo from '../assets/logo.png'
 
-const NavMenu = () => {
+const NavMenu = props => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   const handleToggle = () => {
@@ -15,7 +15,12 @@ const NavMenu = () => {
     <div className='btn-global'>
       <img src={Logo} className='btn-circle' onClick={handleToggle} />
       {navbarOpen ? (
-        <NavItem navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
+        <NavItem
+          navbarOpen={navbarOpen}
+          setNavbarOpen={setNavbarOpen}
+          showAlchemy={props.showAlchemy}
+          setShowAlchemy={props.setShowAlchemy}
+        />
       ) : (
         ''
       )}

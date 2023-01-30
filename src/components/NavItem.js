@@ -5,6 +5,7 @@ import NavItem1 from '../assets/icon_map.png'
 import NavItem2 from '../assets/Potion.jpg'
 
 const NavItem = props => {
+  const alchemyClick = () => props.setShowAlchemy(!props.showAlchemy)
   const { navbarOpen, setNavbarOpen } = props
   const [show, setShow] = useState(false)
 
@@ -25,10 +26,10 @@ const NavItem = props => {
         <img src={NavItem1} />
         <span>Carte</span>
       </Link>
-      <Link to='/alchemy' className={`NavItem2 ${show ? 'show' : ''}`}>
+      <div className={`NavItem2 ${show ? 'show' : ''}`} onClick={alchemyClick}>
         <img src={NavItem2} />
         <span>Alchimie</span>
-      </Link>
+      </div>
     </>
   )
 }

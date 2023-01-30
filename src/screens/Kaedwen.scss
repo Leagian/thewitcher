@@ -3,4 +3,45 @@
     background-repeat: no-repeat;
     height:100vh;
     background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+// background video
+
+.screen-background {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+#myVideo {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.kaedwenCastleLight {
+    position: absolute;
+    
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    background: #6F7986;
+    animation: light 4s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes kaedwenCastleLight {
+    0%   {opacity: .1; transform: translate(0px) scale(1)}
+    50%  {opacity: .0.8; transform: translate(0px) scale(.9)}
+    100% {opacity: .0.3; transform: translate(0px) scale(1)}
+}
+.test {
+    position:relative;
+    top: -1150px;
+    right: -1200px;
 }

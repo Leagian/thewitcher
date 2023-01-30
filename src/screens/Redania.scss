@@ -3,4 +3,24 @@
     background-repeat: no-repeat;
     height:100vh;
     background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+}
+
+.redaniaCastleLight {
+    position: absolute;
+    top: 52vh;
+    right: 41.5vw;
+    width: 3vw;
+    height: 8vh;
+    border-radius: 50%;
+    background: #FF8040;
+    animation: light 2s linear infinite alternate;
+    filter: blur(10px);
+}
+
+@keyframes redaniaCastleLight {
+    0%   {opacity: .4; transform: translate(0px) scale(1)}
+    50%  {opacity: .3; transform: translate(0px) scale(.9)}
+    100% {opacity: .1; transform: translate(0px) scale(1)}
 }

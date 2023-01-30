@@ -1,14 +1,14 @@
 import logo from '../assets/logo.png'
-import smoke from '../assets/smoke.png'
-import cloud from '../assets/cloud.png'
 import video from '../assets/video.mp4'
-import son from '../assets/Vagabond.mp3'
+import son from '../assets/audioHome.mp3'
 import AudioPlayer from 'react-audio-player'
 import { Link } from 'react-router-dom'
+import '../fonts/OptimusPrinceps.ttf'
 
 function Home() {
   return (
     <>
+
       <Link to={'/map'}>
         <div className='logo'>
           <img className='imglogo' src={logo} alt='Logo' />
@@ -18,7 +18,15 @@ function Home() {
         <div className='gradient'></div>
       </div>
 
+      <div className="animation-text">
+  <p className="text"> Geralt de Riv : c'est l'histoire du destin entrelace de trois individus dans le vaste monde du continent.</p>
+  <p className="text1"> humains, elfes, mages, monstres et autres creatures</p>
+  <p className="text2"> luttent et se battent pour survivre et prosperer.</p>
+  <p className="text3"> mais ou se situe la frontiere entre le bien et le mal dans un monde si violent ?</p>
+</div>
       <div>
+        
+     
         <video
           src={video}
           style={{
@@ -35,16 +43,107 @@ function Home() {
         ></video>
       </div>
 
-      <div className='cloud' id='cloud1'></div>
-      <div className='cloud' id='cloud2'></div>
-      <div className='cloud' id='cloud3'></div>
-      <div className='cloud' id='cloud4'></div>
+      <div className='braises'>
 
-      <div>
-        <AudioPlayer src={son} autoPlay controls />
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+  <div className='braise'></div>
+</div>
+
+        {/* PLAYER MUSIQUE */}
+        <div className='audio'>
+        <AudioPlayer src={son} autoPlay controls  />
       </div>
+
+    
     </>
   )
 }
+
+
 
 export default Home
