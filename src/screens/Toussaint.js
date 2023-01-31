@@ -38,7 +38,9 @@ const Toussaint = () => {
           muted={true}
         ></video>
       </div>
-      <div className='toussaintCastleLight'></div>
+      <div className='toussaintLight'>
+        <div className='toussaintCastleLight'></div>
+      </div>
       <NavMenu />
     </>
   )

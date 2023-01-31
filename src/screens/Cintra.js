@@ -7,7 +7,6 @@ import {
 } from '../components/RegionHistory.js'
 import video from '../assets/video.mp4'
 import NavMenu from '../components/NavMenu'
-import AlchemyFeature from '../components/AlchemyFeature'
 
 import Characters from '../components/Characters'
 
@@ -35,17 +34,10 @@ const Cintra = props => {
           ></video>
         </div>
       </div>
-      <div className='cintraCastleLight'></div>
-      <NavMenu
-        showAlchemy={props.showAlchemy}
-        setShowAlchemy={props.setShowAlchemy}
-      />
-      {props.showAlchemy && (
-        <AlchemyFeature
-          showAlchemy={props.showAlchemy}
-          setShowAlchemy={props.setShowAlchemy}
-        />
-      )}
+      <div className='cintraLight'>
+        <div className='cintraCastleLight'></div>
+      </div>
+      <NavMenu />
     </>
   )
 }

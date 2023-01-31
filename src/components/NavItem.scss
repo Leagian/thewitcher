@@ -8,7 +8,7 @@
     border-radius: 50%;
     background: radial-gradient(circle, white 0%, white 32%, rgba(210,16,16,0) 100%);
     filter: blur(12px);
-    transition: opacity 2s;
+    transition: opacity 0.1s;
     opacity: 0;
 }
 
@@ -22,7 +22,7 @@
     height: 80px;
     position: absolute;
     top: 14vh; right: 12vw;
-    transition: opacity 4s;
+    transition: opacity 1s;
     opacity: 0;
 }
 
@@ -32,9 +32,9 @@
 
 .NavItem1 span{
     position:absolute;
-    margin-left:-130px;
+    margin-left:-135px;
     color:#09c;
-    background:rgba(82, 80, 80, 0.238);
+    background:rgba(0, 0, 0, 0.547);
     padding:15px;
     border-radius:15px;
     transform:scale(0) rotate(-12deg);
@@ -53,7 +53,7 @@
     height: 80px;
     position: absolute;
     top: 4.5vh; right: 6.5vw;
-    transition: opacity 4s;
+    transition: opacity 1s;
     opacity: 0;
 }
 
@@ -66,7 +66,7 @@
     margin-top:-50px;
     margin-left:-135px;
     color:#09c;
-    background:rgba(82, 80, 80, 0.238);
+    background:rgba(0, 0, 0, 0.547);
     padding:15px;
     border-radius:15px;
     transform:scale(0) rotate(-12deg);
