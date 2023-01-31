@@ -30,7 +30,9 @@ const Nilfgaard = () => {
           muted={true}
         ></video>
       </div>
-      <div className='nilfgaardCastleLight'></div>
+      <div className='nilfgaardLight'>
+        <div className='nilfgaardCastleLight'></div>
+      </div>
       <NavMenu />
     </>
   )
