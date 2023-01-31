@@ -9,8 +9,6 @@
 
 .redaniaCastleLight {
     position: absolute;
-    top: 52vh;
-    right: 41.5vw;
     width: 3vw;
     height: 8vh;
     border-radius: 50%;
@@ -23,4 +21,10 @@
     0%   {opacity: .4; transform: translate(0px) scale(1)}
     50%  {opacity: .3; transform: translate(0px) scale(.9)}
     100% {opacity: .1; transform: translate(0px) scale(1)}
+}
+
+.redaniaLight {
+    position:relative;
+    top: -1380px;
+    right: -1060px;
 }

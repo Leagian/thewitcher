@@ -26,8 +26,6 @@
 }
 .nilfgaardCastleLight {
     position: absolute;
-    top: 59vh;
-    right: 40.5vw;
     width: 7vw;
     height: 12vh;
     border-radius: 50%;
@@ -40,4 +38,10 @@
     0%   {opacity: .4; transform: translate(0px) scale(1)}
     50%  {opacity: .3; transform: translate(0px) scale(.9)}
     100% {opacity: .1; transform: translate(0px) scale(1)}
+}
+
+.nilfgaardLight {
+    position:relative;
+    top: -1330px;
+    right: -1010px;
 }

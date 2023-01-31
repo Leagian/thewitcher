@@ -25,12 +25,12 @@ function RedaniaModal({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            Redania, named after Roeden, is a wealthy realm which profits from
-            trade and agriculture and one of the Four Kingdoms. The capital city
-            of Redania is Tretogor. Other prominent cities are Oxenfurt, with
-            the largest university in the Northern Realms and the free city of
-            Novigrad. The kingdoms neighbors are Kovir, Caingorn, Kaedwen,
-            Aedirn, and Temeria.
+            Redania, nommée d'après Roeden, est un royaume riche, figure du
+            commerce et de l'agriculture et l'un des quatre royaumes. La
+            capitale de Redania est Tretogor. Oxenfurt est également importante.
+            Elle abrite la plus grande université des Royaumes du Nord et la
+            cité libre de Novigrad. Les voisins du royaume sont Kovir, Caingorn,
+            Kaedwen, Aedirn et Temeria.
           </p>
         </div>
       </div>
@@ -57,13 +57,13 @@ function RedaniaModal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer1'>
         <div className='title'>
-          <h2>Ancient Times</h2>
+          <h2>Antiquité</h2>
         </div>
         <div className='body'>
           <p>
-            Redania was first settled by the Dauk and Wozgor people before the
-            First Landing, specifically the Gelibol region and the Nimnar
-            valley, according to a classification by the historian Arnelius
+            Redania était originellement peuplée par les peuples Dauk et Wozgor
+            avant le Premier Débarquement, plus précisément la région de Gelibol
+            et la vallée de Nimnar, selon une classification de l'historien
             Grock.
           </p>
         </div>
@@ -91,28 +91,28 @@ function RedaniaModal2({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer2'>
         <div className='title'>
-          <h2>Northern Wars</h2>
+          <h2>Les guerres du Nord</h2>
         </div>
         <div className='body'>
           <p>
-            In 1263, during the First Northern War, the Royal Redanian Army,
-            along with the forces of Aedirn, Temeria, and Kaedwen, faced the
-            invading Nilfgaardian Army in Lower Sodden, during the Battle of
-            Sodden Hill. The northern armies were under the united leadership of
-            King Vizimir II of Redania, and were successful in preventing the
-            Nilfgaardian invasion. After the war, tensions rose with Temeria,
-            and King Vizimir II forced Novigrad into ius stapulae, blocking all
-            merchandise routes and seizing any wares from Nilfgaard or Temeria.
-            King Foltest of Temeria responded by introducing the same law to
-            Vizima and Gors Velen, blocking all Redanian wares, which started to
-            affect the economy as Redania did not have the resources or
-            manufactories to produce their own goods. King Vizimir II of Redania
-            was assassinated during the Second Nilfgaard War. During the
-            interregnum, the country was ruled by a Regency Council headed by
-            Sigismund Dijkstra, the head of Redanian Intelligence, and Philippa
-            Eilhart, head of the Lodge of Sorceresses. Subsequently, reached the
-            proper age, the country passed in the hands of Radovid V, known as
-            The Stern.
+            En 1263, au cours de la première guerre du Nord, l'armée royale de
+            Redania, avec les forces d'Aedirn, de Temeria et de Kaedwen, fit
+            face à l'armée Nilfgaardienne en invahissant la Sodden du Sud lors
+            bataille de Sodden Hill. Les armées du nord, sous la direction
+            unifiée du roi Vizimir II de Redania, réussirent à empêcher
+            l'invasion Nilfgaardienne. Après la guerre, les tensions montèrent
+            avec Temeria et le roi Vizimir II força Novigrad à ius stapulae,
+            bloquant toutes les routes de marchandises et saisissant tous les
+            produits de Nilfgaard ou de Temeria. Le roi Foltest de Temeria
+            répondit en introduisant la même loi à Vizima et Gors Velen,
+            bloquant tous les produits de Redania, ce qui commença à affecter
+            l'économie car Redania ne disposait pas des ressources pour produire
+            ses propres produits. Le roi Vizimir II de Redania fut tué pendant
+            la deuxième guerre Nilfgaardienne. Au cours de l'interrègne, le pays
+            fut gouverné par un conseil de régence dirigé par Sigismund
+            Dijkstra, chef du renseignement redanien, et Philippa Eilhart,
+            cheffe du logis des sorcières. Par la suite, le temps venu, le pays
+            passa aux mains de Radovid V, connu sous le nom de L'Austère.
           </p>
         </div>
       </div>
@@ -139,21 +139,23 @@ function RedaniaModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer3'>
         <div className='title'>
-          <h2>Society</h2>
+          <h2>Société</h2>
         </div>
         <div className='body'>
           <p>
-            Quite specific is the social structure of this country - the cult of
-            the nobility runs strong in Redania, and higher social stratum
-            possesses more privilege here than in any nearby realm. Great
-            differences in wealth exist among the gentry, but Redanian law cares
-            for birth not property, making a well-born beggar the legal equal of
-            the richest magnate. Those of high birth and great wealth draw the
-            latter primarily from the grain trade and pedigreed horse husbandry.
-            As a consequence of nobilitys privileged position, the peasantry is
-            treated worse here than in any neighboring state, and only the kings
-            kings iron fist keeps them from rebelling. The government of Redania
-            Redania is also heavily influenced by sorceresses.
+            Typique de la structure sociale de ce pays - le culte de la noblesse
+            est populaire en Redania, et les strates sociales les plus elevées
+            possèdent plus de privilièges ici que dans aucun des royaumes
+            voisins. De grandes différences de richesses sont observées au sein
+            de la noblesse, mais la loi Redanienne se soucie plus du droit de
+            naissance que du droit de propriété, faisant d'un mendiant bien né
+            l'égal du magnat le plus riche. Ceux de haute naisance possedant de
+            grandes richesses tirent principalement profit du commerce des
+            céréales et de l'élevage de chevaux de race. En conséquence de la
+            position privilégiée de la noblesse, les gens du peuple sont traités
+            pire ici que dans n'importe quel État voisin, et seule la poigne de
+            fer du Roi les empêche de se révolter. Le gouvernement de Redania
+            est également fortement influencé par les sorcières.
           </p>
         </div>
       </div>
@@ -180,18 +182,19 @@ function RedaniaModal4({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer4'>
         <div className='title'>
-          <h2>Culture</h2>
+          <h2>La culture</h2>
         </div>
         <div className='body'>
           <p>
-            On Saovine, Redanian children burn figurines of Falka on bonfires,
-            to remember her famous rebellion. Redanian steeds are unsurpassed,
-            and thus the Redanian cavalry is among the best of its kind in the
-            world, and with the countrys nobility filling its ranks, it is the
-            heart of Royal Redanian Army. For ages, Redania has fought a customs
-            war with Temeria, its primary rival in the North. Redania possesses
-            the best intelligence network in the world, and throughout history
-            they have infiltrated many of their rivals fellow agencies.
+            Lors de Saovine, les enfants Redaniens brûlent des figurines de
+            Falka dans des feux de joie, en mémoire de sa célèbre rébellion. Les
+            coursiers Redaniens sont inégalés, ce qui fait de la cavalerie
+            Redanienne l'une des meilleures au monde, et avec la noblesse du
+            pays dans ses rangs, elle est le coeur de l'Armée Royale Redanienne.
+            Depuis des millénaires, Redania est en guerre de coutumes avec
+            Temeria, sa principale rivale au Nord. Redania possède le meilleur
+            réseau d'espionnage au monde, et au cours de l'Histoire, ils ont
+            infiltré nombre d'organisations rivales.
           </p>
         </div>
       </div>
@@ -218,18 +221,18 @@ function RedaniaModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer5'>
         <div className='title'>
-          <h2>Economy and trade</h2>
+          <h2>Économie et commerce</h2>
         </div>
         <div className='body'>
           <p>
-            The Kingdom derives enormous profits from trade with Novigrad as
-            well as grain exports. It may be said that the monarchy is the
-            granary of the whole Continent, and even other parts of the world.
-            Therefore, the dominant landscape of Redania is huge, undulating
-            fields of grain. In the 13th century, the state economy became
-            seriously threatened, because of the flow of cheap goods from and
-            others into the country, which constitute serious competition for
-            local artisans. In addition, there are very few manufactories.
+            Le Royaume tire d'énormes profits du commerce avec Novigrad ainsi
+            que des exportations de céréales. On peut dire que c'est le grenier
+            de tout le continent, et même d'autres parties du monde. En effet,
+            le paysage dominant de Redania est immense, vallonné de champs de
+            céréales. Au XIIIe siècle, l'économie de l'État fut gravement
+            menacée, en raison du flux de marchandises bon marché en provenance
+            d'autres pays, ce qui constituait une concurrence sérieuse pour les
+            artisans locaux, compte tenu de l'absence de manufacture.
           </p>
         </div>
       </div>

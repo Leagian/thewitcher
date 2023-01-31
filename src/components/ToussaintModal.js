@@ -25,13 +25,14 @@ function ToussaintModal({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            Toussaint is a small autonomous duchy under the banner of the Empire
-            of Nilfgaard, famous for its wines, enabled by the regions volcanic
-            soil and ideal combination of sunny and rainy days. Toussaint does
-            not maintain a large standing army of its own, instead relying on a
-            few regiments of knights-errant, watching the borders and roads in
-            conjunction with Ducal Guard. Toussaint is also one of the few
-            countries in the Continent which does not have a Secret Service.
+            Toussaint est un petit duché autonome sous la bannière de l'Empire
+            de Nilfgaard, célèbre pour ses vins, ses sols volcaniques régionaux
+            actifs, et son climat idéal de jours ensoleillés et pluvieux.
+            Toussaint ne possède pas de large armée bien à elle. Elle s'appuie
+            plutôt sur quelques régiments de chevaliers errants, qui surveillent
+            les frontières et les routes en collaboration avec la Garde Ducale.
+            C'est aussi l'un des rares pays du continent qui n'a pas de services
+            secrets.
           </p>
         </div>
       </div>
@@ -62,14 +63,15 @@ function ToussaintModal1({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            Despite being a vassal state of Nilfgaard, Toussaint maintains high
-            level of autonomy and the Nilfgaardian Empire does not tend to
-            impose imperial authority on its internal affair or violate its
-            borders for the most part. While the duchys surface may be fairy and
-            and serene, beneath the wine cellars it hides a gargantuan
-            underground system of interconnecting ancient adits, mines and
-            dungeons, as well as natural caverns and tunnels hollowed by lava,
-            allegedly connected with the center of the earth.
+            Bien qu'il soit un État vassal de Nilfgaard, Toussaint maintient un
+            haut niveau d'autonomie et l'empire Nilfgaardien n'impose pas
+            l'autorité impériale sur ses affaires intérieures et respecte ses
+            frontières, pour la plupart. Alors que la surface du duché peut
+            paraître féerique et sereine, sous les chais se cache un
+            gargantuesque système souterrain d'anciennes galeries d'accès, de
+            mines etdes donjons, ainsi que des cavernes naturelles et des
+            tunnels creusés par la lave, dont on dit qu'ils sont liés au centre
+            de la terre.
           </p>
         </div>
       </div>
@@ -96,21 +98,21 @@ function ToussaintModal2({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer2'>
         <div className='title'>
-          <h2>Prehistory and Ancient Times</h2>
+          <h2>Préhistoire et Antiquité</h2>
         </div>
         <div className='body'>
           <p>
-            For ages the undergrounds of modern-day Toussaint were inhabited by
-            intelligent creatures like korreds, kilmulises, pryskirniks and many
-            others, some of them unknown in witcher tomes even till the 13th
-            century. In the 8th century, a group of Aen Seidhe elves founded
-            their kingdom here with modern-day Beauclair as its capital. They
-            built beautiful cities made of white marble and ivory. When the
-            Conjunction of the Spheres occured, it was here where the gate from
-            the vampiric universe opened, trapping vampires in this world. They
-            split into three distint tribes: Gharasham, who stayed in the
-            western part of the Continent, Tdet, who ventured east, and Ammurun,
-            who crossed the Great Sea heading to the west.
+            Pendant des siècles, les souterrains de Toussaint ont été habités
+            par des créatures intelligentes comme les korreds, les kilmulises,
+            les pryskirniks et bien d'autres, dont certaines inconnues jusqu'au
+            13ème siècle. Au 8ème siècle, un groupe d'elfes Aen Seidhe fonda
+            leur royaume ici avec Beauclair comme capitale. Ils construisirent
+            de belles villes de marbre blanc et d'ivoire. Au moment de la
+            conjonction des Sphères, c'est ici que la porte du monde vampirique
+            s'ouvrit, piégeant les vampires dans ce monde. Ils se divisèrent en
+            trois tribus distinctes : les Gharasham, qui restèrent dans la
+            partie ouest du continent, les Tdet, qui s'aventurèrent à l'est, et
+            les Ammurun, qui traversèrent la Grande Mer en direction de l'ouest.
           </p>
         </div>
       </div>
@@ -137,25 +139,26 @@ function ToussaintModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer3'>
         <div className='title'>
-          <h2>Human conquest and fragmented land</h2>
+          <h2>Conquête humaine et monde fragmenté</h2>
         </div>
         <div className='body'>
           <p>
-            A couple of decades after the First Landing, elven king Divethafs
-            realm faced a invasion led by Nordling chieftain Ludovic. In 781 the
-            elves from the land around todays Beauclair abandoned their ivory
-            cities and left for the Amell mountains, taking with them all that
-            they could and destroying everything else. Whatever they could not
-            take and did not manage to demolish or burn, they cursed. Ludovic
-            marched into the foothills with his army, demanding Divethaf to
-            surrender and proclaim him as king. A battle ensued after the elf
-            refused and Aen Seidhe army was slain. Weeping over the loss,
-            Divethaf agreed to pay the homage. Next year humans decided to
-            celebrate the anniversary of the victory with a pogrom, genociding
-            all the remnants at the Mount Gorgon slopes. The last untouched by
-            humans elven trace was the hidden necropoly of Tir ná Béa Arainne
-            which continued to be used over the course of subsequent ages,
-            protected by Aen Saevherne.
+            Quelques décennies après le premier débarquement, le royaume du roi
+            elfique Divethafs fit face à une invasion menée par le chef Nordling
+            Ludovic. En 781, les elfes des terres autour du Beauclair actuel
+            abandonèrent leur villes d'ivoire et partirent pour les monts Amell,
+            emportant avec eux tout ce qu'ils pouvaient et détruisant tout le
+            reste. Tout ce qu'ils ne purent prendre, démolir ou brûler, ils le
+            maudirent. Ludovic entra dans les contreforts avec son armée, et
+            somma Divethaf de se rendre et de le proclamer roi. Une bataille
+            s'ensuivit après le refus de l'elfe et l'armée d'Aen Seidhe fut
+            massacrée. Pleurant sur sa défaite, Divethaf accepta de rendre
+            hommage. L'année suivante, les humains décidèrent de célébrer
+            l'anniversaire de cette victoire par un pogrom, éradiquant tous les
+            vestiges sur les pentes du mont Gorgon. La dernière trace elfique
+            épargnée par les humains fut la nécropole cachée de Tir ná Béa
+            Arainne qui a continue d'être utilisée à travers les âges, protégée
+            par Aen Saevherne.
           </p>
         </div>
       </div>
@@ -182,23 +185,24 @@ function ToussaintModal4({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer4'>
         <div className='title'>
-          <h2>Human conquest and fragmented land</h2>
+          <h2>Conquête humaine et monde fragmenté</h2>
         </div>
         <div className='body'>
           <p>
-            In the following centuries the main occupation of early Toussantois
-            was apparently mining, as they hollowed many adits and mines.
-            Several dungeons were also constructed then, probably to imprison
-            political enemies, the land was parcellated among several petty
-            lords and dukes. One of such lordships was Epicéa on Gorgon
-            Foothils, near the very place of Divethafs defeat. Another lordship,
-            lordship, centered around Toricella, was the primary military force
-            in fight against the remaining elves, who were finally defeated in
-            1050s leaving all of futures Toussaint under human control. One of
-            the most important and landscape-changing events of this period was
-            Nazairi Duke Adams attempt to regulate the flow of the Sansretour
-            River to his likeness, and unwilling creation of the Sansretour
-            Marsh in the process.
+            Durant les siècles suivants, l'activite principale des premiers
+            Toussaintois était apparemment minière, car ils ont creusé de
+            nombreuses galeries et mines. Plusieurs donjons furent également
+            construits, probablement pour emprisonner des ennemis politiques. La
+            terre fut morcelée entre plusieurs petits seigneurs et ducs. L'une
+            de ces seigneuries était Epicéa au pied du mont Gorgon, près du lieu
+            même de la défaite de Divethafs. Une autre seigneurie, centrée
+            autour de Toricella, était la principale force militaire dans la
+            lutte contre les elfes restants, qui furent finalement vaincus en
+            1050 laissant tout Toussaint sous contrôle humain. Un des événements
+            les plus importants et les plus marquants de cette période fut la
+            tentative du duc Adam de Nazaire de réguler le flux de la Rivière
+            Sansretour à sa convenance, créant involontairement le marais de
+            Sansretour.
           </p>
         </div>
       </div>
@@ -225,26 +229,27 @@ function ToussaintModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer5'>
         <div className='title'>
-          <h2>Reforms</h2>
+          <h2>Réformes</h2>
         </div>
         <div className='body'>
           <p>
-            In the 12th century the region witnessed its first reforms,
-            initiated by Duke Henri III. Admiring distant lands at Lower Alba he
-            tried to civilize the realm, e.g. by changes in the punitive law. At
-            At the middle point of the century the power in the country was
-            consolidated by Duchess Adela Marta. She ordered the renovation of
-            the elven capital palace and moved her seat there, establishing the
-            city of Beauclair. She planted the seeds of chivalric traditions in
-            the Duchy by organising a tourney for her suitors, rewarding the
-            qualities she valued most in men : Strength, Valor and Cunning. On
-            her journey south she met the youngest son of Nilfgaardian Emperor
-            Torres and wed him, creating a bond between Toussaint and the
-            Nilfgaardian Empire. Carolina Roberta, Ademartas daughter, continued
-            continued the reforms. She forbade the use of pointed knives during
-            the feasts, as she found the custom of using them to pick ones teeth
-            teeth barbarous. She was also the one who recognized the cult of
-            Lebioda, brought here by Saint Plegmund.
+            Au XIIe siècle, la région connaît ses premières réformes, initiées
+            par le Duc Henri III. Admiratif des terres lointaines d'Alba du Sud,
+            il tenta de civiliser le royaume, par exemple par des modifications
+            des lois punitives. Au milieu du siècle, le pouvoir dans le pays fut
+            consolidé par la duchesse Adela Marta. Elle ordonna la rénovation du
+            palais de la capitale elfique et y déplaça son siège, établissant la
+            ville de Beauclair. Elle planta les graines des traditions
+            chevaleresques au sein du duché en organisant un tournoi pour ses
+            prétendants, récompensant les qualités qu'elle appréciait le plus
+            chez les hommes : la force, la bravoure et la ruse. Lors de son
+            voyage vers le sud, elle rencontra le plus jeune fils de l'empereur
+            Nilfgaardien, Torres, et l'épousa, créant un lien entre Toussaint et
+            l'Empire Nilfgaardien. Carolina Roberta, fille d'Ademartas,
+            poursuivit les réformes. Elle interdit l'utilisation de couteaux
+            pointus pendant les banquets, car elle trouvait la coutume de s'en
+            servir pour se curer les dents barbares. Ce fut également elle qui
+            reconnut le culte de Lebioda, porté par Saint Plegmund.
           </p>
         </div>
       </div>
@@ -271,22 +276,23 @@ function ToussaintModal6({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer6'>
         <div className='title'>
-          <h2>13th Century</h2>
+          <h2>13ème siècle</h2>
         </div>
         <div className='body'>
           <p>
-            The duchy was ruled by Carobertas granddaughter Anna Henrietta at
-            least since the 1258 when she married duke Raymund. Despite having a
-            husband it was she who held the greater estime of her subjects.
-            However, since Raymunds death in 1265, Anarietta had been kept
-            unaware of the worlds events by her councelors due to her supposed
-            emotional instability and learnt that the Northern War II had broken
-            up only in late 1267 when informed of it by Geralts hanza. For this
-            treason she imprisoned minister Tremblay in the tower. In 1275 the
-            Duchy fell under the attack of vampires led by Dettlaff van der
-            Eretein. Depending on certain circumstances the Duchess might have
-            died leading to giving the power in hands of the Regency Council,
-            but it is not certain.
+            Le duché fut gouverné par la petite-fille de Carobertas Anna
+            Henrietta au moins depuis le 1258, quand elle épousa le duc Raymund.
+            Malgré la présence d'un mari, c'était elle qui avait la plus grande
+            estime de la part ses sujets. Cependant, après la mort de Raymund en
+            1265, Anarietta avait été gardée à l'écart des événements du monde
+            par ses conseillers en raison de sa supposée instabilité
+            émotionnelle, et appris que la Seconde Guerre du Nord avait brisé
+            avait éclaté en fin d'année 1267, informée par Geralt. Pour ça
+            trahison, elle emprisonna le ministre Tremblay dans la tour. En
+            1275, le Duché tomba sous l'attaque de vampires dirigés par Dettlaff
+            van der Eretéine. Selon certaines sources, la duchesse serait morte,
+            conduisant à donner le pouvoir au Conseil de régence, mais ce n'est
+            pas certain.
           </p>
         </div>
       </div>
@@ -313,20 +319,21 @@ function ToussaintModal7({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer7'>
         <div className='title'>
-          <h2>Society, culture and economy</h2>
+          <h2>Société, culture et économie</h2>
         </div>
         <div className='body'>
           <p>
-            The above-ground part of the region is inhabited predominantly by
-            humans of Nordling origin. Underground parts remained unsearched to
-            at least 13th century and are inhabited by gremlins, kilmulises,
-            korreds, pryskirniks, vampires and a number of species yet unknown
-            to science. Tradition is a holy thing in Toussaint. Holidays, the
-            most important of them being Wine Vat, are keenly observed. In the
-            ancient times the region had a mining industry. Since the middle
-            point of the 12th century however, the major area of the duchys
-            economy has been wine industry and the closed adits and shafts are
-            being slowly colonized by monsters.
+            La partie terrestre de la région est habitée principalement par des
+            humains d'origine nordique. Les parties souterraines n'ont pas été
+            fouillées avant le 13ème siècle et étaient habitées par des
+            gremlins, des kilmulises, korreds, pryskirniks, vampires et un
+            certain nombre d'espèces encore inconnues. La tradition est chose
+            sainte à Toussaint. Les vacances, les plus importantes d'entre elles
+            étant celles de Wine Vat, sont vivement observés. Dans l'Antiquité,
+            la région possédait une industrie minière. Depuis le milieu du 12ème
+            siècle cependant, l'activité économique majeure du duché est
+            l'industrie du vin, et les galeries et puits fermés sont peu à peu
+            colonisé par des monstres.
           </p>
         </div>
       </div>

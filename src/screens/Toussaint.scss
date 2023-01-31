@@ -26,8 +26,6 @@
 }
 .toussaintCastleLight {
     position: absolute;
-    top: 61vh;
-    right: 15vw;
     width: 4vw;
     height: 9vh;
     border-radius: 50%;
@@ -40,4 +38,10 @@
     0%   {opacity: .3; transform: translate(0px) scale(1)}
     50%  {opacity: .2; transform: translate(0px) scale(.9)}
     100% {opacity: .1; transform: translate(0px) scale(1)}
+}
+
+.toussaintLight {
+    position:relative;
+    top: -1280px;
+    right: -1560px;
 }

@@ -25,13 +25,14 @@ function TemeriaModal({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            Temeria is one of the northern kingdoms, lying south of the Pontar
-            river. Its neighbors are Redania, Kerack, Kaedwen, Aedirn, Mahakam,
-            Lower Sodden, and Cidaris. After the first and second wars, Temeria
-            profited the most out of the defeat of Nilfgaard, expanding its
-            borders as far south as Angren and Riverdell, reaching the Amell
-            mountains. But the Kingdom also received a heavy blow regarding its
-            economy, which forced it to buy goods from their southern neighbor.
+            Temeria est l'un des royaumes du nord, situé au sud du fleuve
+            Pontar. Ses voisins sont Redania, Kerack, Kaedwen, Aedirn, Mahakam,
+            Lower Sodden et Cidaris. Après les première et seconde guerres,
+            Temeria est le territoire qui a le plus profité de la défaite de
+            Nilfgaard, élargissant ses frontières jusqu'au sud qu'Angren et
+            Riverdell, atteignant les montagnes d'Amell. Mais le Royaume a
+            également essuyé un revers économique, ce qui l'a obligé à acheter
+            des marchandises à son voisin du sud.
           </p>
         </div>
       </div>
@@ -58,15 +59,15 @@ function TemeriaModal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer1'>
         <div className='title'>
-          <h2>Foltests reign</h2>
+          <h2>le règne de Foltest</h2>
         </div>
         <div className='body'>
           <p>
-            In 1263, during the First Northern War, King Foltest of Temeria sent
-            the Temerian Army to Lower Sodden, in an attempt to help defend
-            against the invading Nilfgaardians. While the Nilfgaardians were
-            defeated, Temeria received many refugees from nearby Cintra, after
-            its capital was sacked.
+            En 1263, pendant la Première Guerre du Nord, le roi Foltest de
+            Temeria envoya son armée en Sodden du Sud pour tenter d'aider la
+            défense contre les envahisseurs Nilfgaardiens. Après la défaite de
+            Nilfgaard, Temeria a accueilli de nombreux réfugiés de Cintra,après
+            la mise à sac de sa capitale.
           </p>
         </div>
       </div>
@@ -93,21 +94,22 @@ function TemeriaModal2({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer2'>
         <div className='title'>
-          <h2>History</h2>
+          <h2>Histoire</h2>
         </div>
         <div className='body'>
           <p>
-            After the war, tensions grew with Redania, as well as Nilfgaard, and
-            an influx of cheap Nilfgaardian goods started passing through
-            Temeria, damaging the economy. King Vizimir II of Redania forced
-            Novigrad into ius stapulae, blocking Temerian and Nilfgaardian goods
-            from entering the city. In response, Foltest issued the law in
-            Vizima and Gors Velen, in an attempt to re-stabilize the economy. In
-            early 1267, on the brink of a Second Northern War, Foltest issued
-            messages to his lords and vassals, instructing them to collect
-            troops for the army, and to store supplies and fortify their
-            castles, prepared for the possibility of sieges in the coming
-            conflict.
+            Après la guerre, les tensions grandirent avec Redania, ainsi qu'avec
+            Nilfgaard, tandis qu'un afflux de produits nilfgaardiens bon marché
+            commençait à traverser Temeria, endommageant l'économie. Le roi
+            Vizimir II de Redania força Novigrad au ius stapulae , empêchant les
+            marchandises témériennes et nilfgaardiennes d'entrer dans la ville.
+            En réponse, Foltest publia la même loi à Wyzima et Gors Velen, dans
+            une tentative de stabiliser l'économie. Début 1267, au bord d'une
+            Seconde Guerre du Nord, Foltest, préparé à la possibilité d'un siège
+            lors du conflit à venir, envoya des messages à ses seigneurs et
+            vassaux, leur ordonnant de rassembler des troupes pour l'armée,et
+            également dans le but de stocker des fournitures et de fortifier
+            leur château.
           </p>
         </div>
       </div>
@@ -134,14 +136,15 @@ function TemeriaModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer3'>
         <div className='title'>
-          <h2>Society</h2>
+          <h2>Société</h2>
         </div>
         <div className='body'>
           <p>
-            Temerians are considered very polite and religious, but do not fully
-            accept representatives of the so-called Elder Races. In general
-            Temerias residents have a tendency for xenophobia, despite nonhumans
-            living in their society.
+            Les Témériens sont considérés comme très polis et religieux, mais
+            n'acceptent pas entièrement les représentants des "Races Anciennes".
+            En général, Les habitants de Temeria ont une tendance à la
+            xénophobie, malgré le fait que des non-humains vivent dans leur
+            société.
           </p>
         </div>
       </div>
@@ -172,10 +175,11 @@ function TemeriaModal4({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            The most popular and most widespread religion in the kingdom is the
-            worship of the goddess Melitele, though cults of the Prophet Lebioda
-            and Kreve also have their followers. On Saovine, children burn
-            figurines of Falka, to represent her defeated rebellion.
+            La religion la plus populaire et la plus répandue dans le royaume
+            est le culte de la déesse Melitele, bien que les cultes des
+            prophètes Lebioda et Kreve ont aussi leurs partisans. Sur Saovine,
+            les enfants brûlent des figurines de Falka, pour représenter sa
+            rébellion vaincue.
           </p>
         </div>
       </div>
@@ -202,19 +206,20 @@ function TemeriaModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer5'>
         <div className='title'>
-          <h2>Economy and trade</h2>
+          <h2>Économie et commerce</h2>
         </div>
         <div className='body'>
           <p>
-            Temeria is one of the wealthiest realms in the North. Temerian
-            economy is based on cultivating the production of various goods,
-            trade, and extracting valuable mineral resources, from the mountains
-            of Mahakam. The Temerian oren is one of the most used currencies in
-            the world. Temeria also remains a land with highly developed
-            agriculture, animal husbandry, and food industry. As Mahakam is
-            officially part of the kingdom, Temeria has considerable interests
-            in the extraction of precious metals and the production of
-            high-quality weapons.
+            Temeria est l'un des royaumes les plus riches du Nord. l'économie
+            Temerienne est basée sur la culture de la production de divers
+            biens, le commerce et l'extraction de précieuses ressources
+            minérales des montagnes de Mahakam. L'oren de Temeria est l'une des
+            monnaies les plus utilisées dans le monde. Temeria reste également
+            une terre avec une agriculture, des élevages et une industrie
+            alimentaire hautement développés. Comme Mahakam fait officiellement
+            partie du royaume, Temeria a des intérêts considérables dans
+            l'extraction de métaux précieux et la production d'armes de haute
+            qualité.
           </p>
         </div>
       </div>

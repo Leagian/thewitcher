@@ -30,7 +30,7 @@ const Kaedwen = () => {
           muted={true}
         ></video>
       </div>
-      <div className='test'>
+      <div className='kaedwenLight'>
         <div className='kaedwenCastleLight'></div>
       </div>
       <NavMenu />

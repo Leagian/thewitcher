@@ -34,7 +34,9 @@ const Cintra = () => {
           ></video>
         </div>
       </div>
-      <div className='cintraCastleLight'></div>
+      <div className='cintraLight'>
+        <div className='cintraCastleLight'></div>
+      </div>
       <NavMenu />
     </>
   )
