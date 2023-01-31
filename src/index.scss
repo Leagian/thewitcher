@@ -1,9 +1,3 @@
-@import './components/AlchemyFeature.scss';
-@import "./components/AlchemyMenu.scss";
-@import "./components/Inventorygrid.scss";
-@import "./components/Potions.scss";
-@import "./components/Bestiary.scss";
-
 @import './App.scss';
 @import './screens/Home.scss';
 @import './screens/CintraTown.scss';
@@ -24,14 +18,21 @@
 @import './screens/Toussaint.scss';
 @import './components/Characters.scss';
 @import './components/CharactersCard.scss';
+@import './components/AlchemyFeature.scss';
+@import "./components/AlchemyMenu.scss";
+@import "./components/Inventorygrid.scss";
+@import "./components/Potions.scss";
+@import "./components/Bestiary.scss";
+@import './components/NavMenu.scss';
+@import './components/NavItem.scss';
+
 
 $OptimusPrinceps : 'OptimusPrinceps';
 @font-face {
   font-family: $OptimusPrinceps;
   src: url(./fonts/OptimusPrinceps.ttf) format("truetype");
   }
-@import './components/NavMenu.scss';
-@import './components/NavItem.scss';
+
 
 @font-face {
   font-family: "MORPHEUS";

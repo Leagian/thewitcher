@@ -5,13 +5,13 @@ const Potions = props => {
   const [selectedCount, setSelectedCount] = useState(0)
   const [buttonClicked, setButtonClicked] = useState(false)
   const [potionTooltip, setPotionTooltip] = useState(false)
+  const setSelectedOftenUsed = props.setSelectedOftenUsed
 
   useEffect(() => {
     setSelectedCount(props.selectedIngredients.length)
   }, [props.selectedIngredients])
 
   const handleClick = () => {
-    setButtonClicked(true)
     const filteredPotions = props.potions.filter(potion => {
       const potionIngredients = potion.ingredients
         .split(',')
@@ -21,8 +21,11 @@ const Potions = props => {
       )
       return intersection.length === 2
     })
-
+    setButtonClicked(true)
     setSelectedPotion(filteredPotions[0])
+  }
+  const updateMonster = () => {
+    setSelectedOftenUsed(selectedPotion.oftenused)
   }
 
   return (
@@ -35,31 +38,42 @@ const Potions = props => {
             alt={selectedPotion.name}
             onMouseEnter={() => setPotionTooltip(true)}
             onMouseLeave={() => setPotionTooltip(false)}
+            onClick={updateMonster}
           />
         )}
         {potionTooltip && selectedPotion && (
           <div className='potion-activated'>
-            <p>Name: {selectedPotion.potionname}</p>
-            <p>Toxicity: {selectedPotion.toxicity}</p>
-            <p>Duration: {selectedPotion.duration}</p>
+            <p className='potion-name'> {selectedPotion.potionname}</p>
+            <p className='info2'>
+              Toxicité: {selectedPotion.toxicity}
+              <br />
+              Durée: {selectedPotion.duration}
+            </p>
+            <p className='info'>
+              Vous pouvez cliquer sur la potion pour découvrir le monstre contre
+              lequel elle est utilisée.
+            </p>
           </div>
         )}
         {!selectedPotion && buttonClicked && (
           <div className='invalide-mix'>
-            <p>
-              This mix doesn't make anything. <br /> Try looking at the
-              ingredients description to get a clue of the possible mixes.
+            <p className='invalide-text'>
+              Ce mélange ne produit rien. Essayez de consulter la description
+              des ingrédients pour trouver une piste
             </p>
           </div>
         )}
       </div>
       <div className='button-container'>
         <button className='button-mix' onClick={handleClick}>
-          Mix ingredients
+          Melanger les ingredients
         </button>
       </div>
       <div className='counter-container'>
-        <div className='counter'>Selected ingredients: {selectedCount}/2</div>
+        <div className='counter'>
+          Ingrédients sélectionnés:
+          <span className='counter-number'> {selectedCount}/2 </span>{' '}
+        </div>
       </div>
       <div className='cauldron-container'>
         <img

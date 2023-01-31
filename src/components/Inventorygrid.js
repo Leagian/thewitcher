@@ -6,7 +6,7 @@ const Inventorygrid = props => {
 
   return (
     <div className='Inventory'>
-      <h1 className='titleinventory'>Inventory</h1>
+      <h1 className='titleinventory'>Inventaire</h1>
       <div className='grid-container'>
         {props.ingredients.map(ingredient => {
           const keyExists =
@@ -33,13 +33,19 @@ const Inventorygrid = props => {
                 <div className='tooltip-activated'>
                   {keyExists ? (
                     <>
-                      <p>Name: {ingredient.name}</p>
-                      <p>Rarity: {ingredient.rarity}</p>
+                      <p className='ingredient-name'> {ingredient.name}</p>
+                      <p className='ingredient-rarity'>
+                        Rareté: {ingredient.rarity}
+                      </p>
+                      <p className='ingredient-description'>
+                        Souvent utilisé dans la préparation de la{' '}
+                        {ingredient.usedFor}
+                      </p>
                     </>
                   ) : (
-                    <p>
-                      Try looking around in the city of {ingredient.location}{' '}
-                      you may find some...
+                    <p className='error-message'>
+                      Essayez de regarder dans la ville de {ingredient.location}
+                      , vous pourriez en trouver...
                     </p>
                   )}
                 </div>

@@ -25,6 +25,10 @@
 .counter {
     font-size: 20px;
     color: burlywood;
+    font-family: "MORPHEUS";
+}
+.counter-number {
+    font-size: 23px;
 }
 .counter-container {
     padding-top: 2vh;
@@ -33,8 +37,10 @@
     color: burlywood;
     background-color: black;
     font-size: 20px;
+    font-family: "OptimusPrinceps";
 }
 .cauldron-container {
+    margin-top: 3vh;
     width: 100%;
     ;
 
@@ -44,18 +50,33 @@
 width: 100%;
 }
 .invalide-mix {
-    color: burlywood;
+    color: black;
     display: flex;
-    padding-top: 8vh;
     padding-left: 2vh;
-    font-size: 20px;
+    font-size: 21px;
+    font-family: "MORPHEUS";
+    background-image: url(../assets/scroll2.png);
+    height: 15vh;
+    position: absolute;
+    width: 12vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    
+}
+.invalide-text {
+    margin-top:1vh;
+    font-family: "MORPHEUS";
+    font-weight: bold;
+    font-style: italic;
+
+    
 }
 .potion-activated {
     position: absolute;
     top: 3vh;
     right: 30vw;
     width: 10vw;
-    height: 12vh;
+    height: 13vh;
     background-color: black;
     color: white;
     padding: 10px;
@@ -63,3 +84,19 @@ width: 100%;
     opacity: 0.75;
     border-radius: 5%;
   }
+  .potion-name {
+    font-family: "OptimusPrinceps";
+    font-size: 18px;
+    position: absolute;
+    top:-1.8vh;
+
+  }
+  .info {
+    font-family: "MORPHEUS";
+    font-size: 14px;
+  }
+  .info2 {
+    font-family: "MORPHEUS";
+    font-size: 16px;
+  }
+ 

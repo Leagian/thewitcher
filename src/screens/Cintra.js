@@ -7,10 +7,11 @@ import {
 } from '../components/RegionHistory.js'
 import video from '../assets/video.mp4'
 import NavMenu from '../components/NavMenu'
+import AlchemyFeature from '../components/AlchemyFeature'
 
 import Characters from '../components/Characters'
 
-const Cintra = () => {
+const Cintra = props => {
   return (
     <>
       <div className='screen-global'>
@@ -35,7 +36,16 @@ const Cintra = () => {
         </div>
       </div>
       <div className='cintraCastleLight'></div>
-      <NavMenu />
+      <NavMenu
+        showAlchemy={props.showAlchemy}
+        setShowAlchemy={props.setShowAlchemy}
+      />
+      {props.showAlchemy && (
+        <AlchemyFeature
+          showAlchemy={props.showAlchemy}
+          setShowAlchemy={props.setShowAlchemy}
+        />
+      )}
     </>
   )
 }

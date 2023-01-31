@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import FlowerImage from '../components/FlowerImage'
 import Spark1 from '../components/Spark1'
 import NavMenu from '../components/NavMenu'
-import AlchemyFeature from '../components/AlchemyFeature'
 
 const CintraTown = props => {
   const [show, setShow] = useState(true)
@@ -30,16 +29,7 @@ const CintraTown = props => {
         {show1 ? <Spark1 show1={show1} setShow1={setShow1} /> : null}
       </div>
       <div className='light'></div>
-      <NavMenu
-        showAlchemy={props.showAlchemy}
-        setShowAlchemy={props.setShowAlchemy}
-      />
-      {props.showAlchemy && (
-        <AlchemyFeature
-          showAlchemy={props.showAlchemy}
-          setShowAlchemy={props.setShowAlchemy}
-        />
-      )}
+      <NavMenu />
     </div>
   )
 }
