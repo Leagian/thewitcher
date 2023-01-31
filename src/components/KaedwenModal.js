@@ -25,12 +25,13 @@ function KaedwenModal({ closeModal }) {
         </div>
         <div className='body'>
           <p>
-            Kaedwen (from Elder Speech Caed Gwen translated as White Forest) is
-            the largest of the Northern Kingdoms (and the second largest country
-            in the Continent, next to Nilfgaard). Its main cities are its
-            capital, Ard Carraigh, and the city of Ban Ard, famous for its
-            sorcery school. It is also known for its cold and unforgiving
-            climate, along with the many forests within its borders.
+            Kaedwen (de la langue ancienne Caed Gwen) est le plus grand des
+            royaumes du Nord (et le deuxième plus grand pays sur le Continent, à
+            côté de Nilfgaard). Ses principales villes sont sa capitale, Ard
+            Carraigh, et la ville de Ban Ard, célèbre pour son école de
+            sorcellerie. Il est également connu pour son climat froid et
+            impitoyable, ainsi que pour les nombreuses forêts à l'intérieur de
+            ses frontières.
           </p>
         </div>
       </div>
@@ -57,19 +58,20 @@ function KaedwenModal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='kModalContainer1'>
         <div className='title'>
-          <h2>History</h2>
+          <h2>Histoire</h2>
         </div>
         <div className='body'>
           <p>
-            King Henselt frequently quarreled with neighboring Aedirn, mostly
-            over the ownership of the Pontar Valley which once belonged to the
-            Kaedwenians. Kaedwen also shares borders with the kingdoms of
-            Redania and Caingorn; and portions of the Fiery Mountains, the
-            Kestrel Mountains and the Blue Mountains run through the kingdom.
-            The witchers fortress of Kaer Morhen is located amidst the peaks of
-            the Blue Mountains, and further south lies the land of the Free
-            Elves, an enclave established by elves seeking refuge from centuries
-            of warring with humans.
+            Le roi Henselt se disputait fréquemment avec Aedirn, le territoire
+            voisin, principalement à propos de la propriété de la vallée du
+            Pontar, qui appartenait autrefois aux Kaedweniens. Kaedwen partage
+            également des frontières avec les royaumes de Redania et Caingorn,
+            ainsi qu'une partie des Montagnes Ardentes, des montagnes Kestrel et
+            des Mountagnes Bleues, qui traversent le royaume. La forteresse des
+            sorceleurs de Kaer Morhen est située sur les sommets des Mountagnes
+            Bleues, et plus au sud se trouve le pays des Elfes Libres, une
+            enclave établie par des elfes cherchant refugiés après des siècles
+            de guerre avec humains.
           </p>
         </div>
       </div>
@@ -96,15 +98,15 @@ function KaedwenModal2({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='kModalContainer2'>
         <div className='title'>
-          <h2>History</h2>
+          <h2>Histoire</h2>
         </div>
         <div className='body'>
           <p>
-            In the far future, the weather changed enough that northern regions,
-            like Talgar, Caingorn, and Kaedwen, are no longer suitable to grow
-            certain types of produce due to the colder climate. In particular,
-            Kaedwen no longer has the capability to grow grapevines and thus no
-            longer has a wine industry.
+            Plus tard, le temps a suffisamment changé pour que les régions du
+            nord, comme Talgar, Caingorn et Kaedwen, ne sont plus adaptés à la
+            culture de certains types de produits en raison du climat plus
+            froid. Particulièrement, Kaedwen n'a plus la capacité de cultiver la
+            vigne et n'a donc plus d'industrie viticole.
           </p>
         </div>
       </div>
@@ -131,19 +133,21 @@ function KaedwenModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='kModalContainer3'>
         <div className='title'>
-          <h2>Northern Wars</h2>
+          <h2>Les guerres du Nord</h2>
         </div>
         <div className='body'>
           <p>
-            During the reign of King Henselt, during the First Northern War in
-            1263, the Kaedwenian Army marched south to face the invading
-            Nilfgaardian Army. While successful, many soldiers were lost in
-            battle, and concurrently Kaedwen was left partially undefended to
-            the newly established Scoiatael, who constantly attacked Kaedwenian
-            forts and regiments on the road, such as Beeches. In 1267, after the
-            northern rulers meeting at Hagge, Henselt formed an offensive
-            against the warring Scoiatael, resulting in pogroms against
-            nonhumans becoming commonplace around the kingdom.
+            Sous le règne du roi Henselt, pendant la Première Guerre du Nord en
+            1263, l'armée kaedwenienne marcha vers le sud pour faire face à
+            l'invasion de l'Armée Nilfgaardienne. Bien qu'ils aient réussi, de
+            nombreux soldats ont été tues dans la bataille, et Kaedwen a été
+            laissé partiellement sans défense au profit de la Scoiatael
+            nouvellement établie, qui a continuellement attaqué les forts
+            Kaedweniens et les régiments sur la route, comme celui des Hêtres.
+            En 1267, après la rencontre des dirigeants du nord à Hagge, Henselt
+            a formé une offensive contre la Scoiatael, entraînant des pogroms
+            contre les non-humains, devienus par la suite monnaie courante dans
+            le royaume.
           </p>
         </div>
       </div>

@@ -4,6 +4,7 @@ const Potions = props => {
   const [selectedPotion, setSelectedPotion] = useState()
   const [selectedCount, setSelectedCount] = useState(0)
   const [buttonClicked, setButtonClicked] = useState(false)
+  const [potionTooltip, setPotionTooltip] = useState(false)
 
   useEffect(() => {
     setSelectedCount(props.selectedIngredients.length)
@@ -32,7 +33,16 @@ const Potions = props => {
             className='img-potion'
             src={selectedPotion.image}
             alt={selectedPotion.name}
+            onMouseEnter={() => setPotionTooltip(true)}
+            onMouseLeave={() => setPotionTooltip(false)}
           />
+        )}
+        {potionTooltip && selectedPotion && (
+          <div className='potion-activated'>
+            <p>Name: {selectedPotion.potionname}</p>
+            <p>Toxicity: {selectedPotion.toxicity}</p>
+            <p>Duration: {selectedPotion.duration}</p>
+          </div>
         )}
         {!selectedPotion && buttonClicked && (
           <div className='invalide-mix'>

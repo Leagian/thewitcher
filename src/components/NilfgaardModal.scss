@@ -73,7 +73,7 @@
 // Contient la bulle
 .nModalContainer {
     width: 310px;
-    height: 180px;
+    height: 200px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
@@ -109,7 +109,7 @@
 
 .nModalContainer3 {
     width: 310px;
-    height: 180px;
+    height: 160px;
     border-radius: 12px;
     background-color: #3B3C3D;
     opacity: 0.9;
@@ -124,28 +124,28 @@
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'OptimusPrinceps', serif;
 }
 
 .nModalContainer1 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'OptimusPrinceps', serif;
 }
 
 .nModalContainer2 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'OptimusPrinceps', serif;
 }
 
 .nModalContainer3 .title {
     display: inline-block;
     text-align: left;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'OptimusPrinceps', serif;
 }
 
 // Corps de texte de la bulle
@@ -156,7 +156,8 @@
     align-items: center;
     font-size: 16px;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'MORPHEUS', serif;
+    font-style: italic;
     text-align: left;
 }
 
@@ -167,7 +168,8 @@
     align-items: center;
     font-size: 16px;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'MORPHEUS', serif;
+    font-style: italic;
     text-align: left;
 }
 
@@ -178,7 +180,8 @@
     align-items: center;
     font-size: 16px;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'MORPHEUS', serif;
+    font-style: italic;
     text-align: left;
 }
 
@@ -189,6 +192,7 @@
     align-items: center;
     font-size: 16px;
     color: #F1F1F1;
-    font-family:'Garamond', serif;
+    font-family:'MORPHEUS', serif;
+    font-style: italic;
     text-align: left;
 }

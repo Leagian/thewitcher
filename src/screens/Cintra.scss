@@ -78,8 +78,6 @@
 }
 .cintraCastleLight {
     position: absolute;
-    top: 53vh;
-    right: 40.5vw;
     width: 8vw;
     height: 13vh;
     border-radius: 50%;
@@ -92,5 +90,11 @@
     0%   {opacity: .4; transform: translate(0px) scale(1)}
     50%  {opacity: .3; transform: translate(0px) scale(.9)}
     100% {opacity: .1; transform: translate(0px) scale(1)}
+}
+
+.cintraLight {
+  position:relative;
+    top: -1380px;
+    right: -1020px;
 }
 

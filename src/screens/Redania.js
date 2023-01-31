@@ -34,7 +34,9 @@ const Redania = () => {
           muted={true}
         ></video>
       </div>
-      <div className='redaniaCastleLight'></div>
+      <div className='redaniaLight'>
+        <div className='redaniaCastleLight'></div>
+      </div>
       <NavMenu />
     </>
   )

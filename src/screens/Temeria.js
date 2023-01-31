@@ -34,7 +34,9 @@ const Temeria = () => {
           muted={true}
         ></video>
       </div>
-      <div className='temeriaVillageLight'></div>
+      <div className='temeriaLight'>
+        <div className='temeriaVillageLight'></div>
+      </div>
       <NavMenu />
     </>
   )
