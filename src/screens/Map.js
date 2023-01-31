@@ -167,7 +167,7 @@ const Map = () => {
           controls
           loop={true}
           muted={false}
-          volume={0.2}
+          volume={0.1}
         />
       </div>
 
