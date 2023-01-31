@@ -10,7 +10,7 @@ import NavMenu from '../components/NavMenu'
 
 import Characters from '../components/Characters'
 
-const Cintra = () => {
+const Cintra = props => {
   return (
     <>
       <div className='screen-global'>

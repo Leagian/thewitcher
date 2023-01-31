@@ -6,25 +6,48 @@
     font-size: 40px;
     margin: 0;
     transform: translate(0% , 10%);
+    color: burlywood;
 }
 .closing-button:hover {
     color: white;
 }
 .titlebestiary {
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    color: burlywood;
-    padding-left:3vh ;
-    margin-top: 1.2vh;
+    color: black;
+    margin-top: 2vh;
+    font-family: "OptimusPrinceps";
+    padding-top: 2VH;
+    margin-bottom: -2vh;
 }
 .scroll-container {
-    padding-top: 2vh;
-    padding-left: 9vh;
+    height: 69vh;
+    background-image: url(../assets/scroll2.png);
     width: 80%;
-}
-.scroll-image {
-    height: 60vh;
     border-radius: 10px;
-    width: 85%;
+    padding-left: 2vh;
+}
+
+.bestiary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bestiary-image {
+    width: 70%;
+}
+.bestiary-name {
+    font-family: "OptimusPrinceps";
+    font-weight: 800;
+    font-size: 23px;
+}
+.bestiary-description {
+  font-family: "MORPHEUS";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 1vh;
+  padding-right: 1vh;
 }

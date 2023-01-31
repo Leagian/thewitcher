@@ -6,7 +6,9 @@ import { useState, useEffect } from 'react'
 const AlchemyMenu = props => {
   const [potions, setPotions] = useState()
   const [ingredients, setIngredients] = useState()
+  const [bestiary, setBestiary] = useState()
   const [selectedIngredients, setSelectedIngredients] = useState([])
+  const [selectedOftenUsed, setSelectedOftenUsed] = useState()
 
   useEffect(() => {
     fetch('http://localhost:4242/potions').then(res =>
@@ -20,6 +22,14 @@ const AlchemyMenu = props => {
     fetch('http://localhost:4242/ingredients').then(res =>
       res.json().then(ingredientsData => {
         setIngredients(ingredientsData)
+      })
+    )
+  }, [])
+
+  useEffect(() => {
+    fetch('http://localhost:4242/bestiary').then(res =>
+      res.json().then(bestiaryData => {
+        setBestiary(bestiaryData)
       })
     )
   }, [])
@@ -57,12 +67,15 @@ const AlchemyMenu = props => {
             <Potions
               potions={potions}
               selectedIngredients={selectedIngredients}
+              setSelectedOftenUsed={setSelectedOftenUsed}
             />
           </div>
           <div className='child3'>
             <Bestiary
               showAlchemy={props.showAlchemy}
               setShowAlchemy={props.setShowAlchemy}
+              bestiary={bestiary}
+              selectedOftenUsed={selectedOftenUsed}
             />
           </div>
         </div>
