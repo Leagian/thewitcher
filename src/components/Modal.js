@@ -53,7 +53,7 @@ function Modal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='modalContainer1'>
         <div className='title'>
-          <h2>Antiquité</h2>
+          <h2>Antiquite</h2>
         </div>
         <div className='body'>
           <p>

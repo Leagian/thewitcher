@@ -98,7 +98,7 @@ function ToussaintModal2({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer2'>
         <div className='title'>
-          <h2>Préhistoire et Antiquité</h2>
+          <h2>Prehistoire et Antiquite</h2>
         </div>
         <div className='body'>
           <p>
@@ -139,7 +139,7 @@ function ToussaintModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer3'>
         <div className='title'>
-          <h2>Conquête humaine et monde fragmenté</h2>
+          <h2>Conquete humaine et monde fragmente</h2>
         </div>
         <div className='body'>
           <p>
@@ -185,7 +185,7 @@ function ToussaintModal4({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer4'>
         <div className='title'>
-          <h2>Conquête humaine et monde fragmenté</h2>
+          <h2>Conquete humaine et monde fragmente</h2>
         </div>
         <div className='body'>
           <p>
@@ -229,7 +229,7 @@ function ToussaintModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer5'>
         <div className='title'>
-          <h2>Réformes</h2>
+          <h2>Reformes</h2>
         </div>
         <div className='body'>
           <p>
@@ -276,7 +276,7 @@ function ToussaintModal6({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer6'>
         <div className='title'>
-          <h2>13ème siècle</h2>
+          <h2>13eme siècle</h2>
         </div>
         <div className='body'>
           <p>
@@ -319,7 +319,7 @@ function ToussaintModal7({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='toModalContainer7'>
         <div className='title'>
-          <h2>Société, culture et économie</h2>
+          <h2>Societe, culture et economie</h2>
         </div>
         <div className='body'>
           <p>

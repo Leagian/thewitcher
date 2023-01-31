@@ -126,7 +126,7 @@ function NilfgaardModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='nModalContainer3'>
         <div className='title'>
-          <h2>Réputation</h2>
+          <h2>Reputation</h2>
         </div>
         <div className='body'>
           <p>

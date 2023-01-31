@@ -57,7 +57,7 @@ function RedaniaModal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer1'>
         <div className='title'>
-          <h2>Antiquité</h2>
+          <h2>Antiquite</h2>
         </div>
         <div className='body'>
           <p>
@@ -139,7 +139,7 @@ function RedaniaModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer3'>
         <div className='title'>
-          <h2>Société</h2>
+          <h2>Societe</h2>
         </div>
         <div className='body'>
           <p>
@@ -221,7 +221,7 @@ function RedaniaModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='rModalContainer5'>
         <div className='title'>
-          <h2>Économie et commerce</h2>
+          <h2>Economie et commerce</h2>
         </div>
         <div className='body'>
           <p>

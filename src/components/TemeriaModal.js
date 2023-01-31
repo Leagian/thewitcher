@@ -59,7 +59,7 @@ function TemeriaModal1({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer1'>
         <div className='title'>
-          <h2>le règne de Foltest</h2>
+          <h2>le regne de Foltest</h2>
         </div>
         <div className='body'>
           <p>
@@ -136,7 +136,7 @@ function TemeriaModal3({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer3'>
         <div className='title'>
-          <h2>Société</h2>
+          <h2>Societe</h2>
         </div>
         <div className='body'>
           <p>
@@ -206,7 +206,7 @@ function TemeriaModal5({ closeModal }) {
     <div className='modalBackground' ref={bubbleRef}>
       <div className='tModalContainer5'>
         <div className='title'>
-          <h2>Économie et commerce</h2>
+          <h2>Economie et commerce</h2>
         </div>
         <div className='body'>
           <p>
